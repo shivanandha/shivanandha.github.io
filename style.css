@@ -1,3 +1,12 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -54,18 +63,8 @@ html {
     box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.448);
   }
 
-.hero{
-    font-family: 'Montserrat', sans-serif;
-}
 .hero1 h1 {
-  padding: 5%;
-    position: absolute;
-    top: 68%;
-    transform: translateY(-50%);
-    margin: auto;
-    z-index: 99;
-    color: #a65cff;
-    text-align: center;
+    text-align: left;
     pointer-events: none;
     font-family: 'Montserrat', sans-serif;
     background: linear-gradient(45deg, #f32170,#ff6b08, #cf23cf, #eedd44);
@@ -76,28 +75,42 @@ html {
     background-clip: text;
     font-weight: 800;
     font-size: 10vh;
-    box-shadow:  rgba(0, 0, 0, 0.748);
   }
 
   .hero1 p{
-    padding: 5%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size:3vh;
-    top: 68%;
-    position: absolute;
+    font-size:4vh;
     color:white;
     text-shadow:  rgba(0, 0, 0, 2);
   }
 
-  .hero1 h1:hover{
-    z-index: 2;
-    -webkit-text-stroke: 1px black;
+
+  .main-text {
+    padding: 5%;
+    position:bottom;
+    margin: auto;
+    top: 50%;
+    transform: translateY(50%);
+  }
+  .item1 {
+    transform: translateY(0%);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90vw;
+    grid-column-gap: 1vw;
+  }
+
+  .item1 h2{
+    text-align: center;
+    font-size: 8vh ;
   }
 
   .container-1{
     width: 100%;
-    height: 90vh;
+    height: 85vh;
   }
 
 .down-arrow {
@@ -135,6 +148,17 @@ html {
   padding: 5%;
 }
 
-.bd-placeholder-img1{
-  background-image: url("https://wallpapersmug.com/download/1280x720/32367a/rick-and-morty-wonder-land.jpg");
+.skills-text{
+  padding: 2%;
+  font-size:large;
+}
+
+
+.album-image{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-20%) translateY(0);
+  max-width: 100%;
+  max-height: 100%;
 }
