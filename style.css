@@ -11,6 +11,16 @@ html {
   scroll-behavior: smooth;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: #17ae9d;
+  background:#d3d8f6;
+}
+
+::selection {
+  color: #17ae9d;
+  background:#d3d8f6;
+}
+
 .background-parti {
   display:block;
 
@@ -113,7 +123,7 @@ html {
 
   
   .background-1{
-    background-color: antiquewhite;
+    background-color: #faebd7;
   }
 .background-black {
   background-color: rgb(38, 38, 38);
