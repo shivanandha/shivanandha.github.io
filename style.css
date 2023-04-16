@@ -156,7 +156,6 @@ html {
   font-size:large;
 }
 
-
 .album-image{
   position: absolute;
   top: 50%;
@@ -185,4 +184,34 @@ html {
   position: absolute;
     right: 18px;
     top: 15px;
+}
+
+.bg-sus{
+background-color: #282A3A;
+opacity: 0.8;
+background: radial-gradient(circle, transparent 20%, #282A3A 20%, #282A3A 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #282A3A 20%, #282A3A 80%, transparent 80%, transparent) 22.5px 22.5px, linear-gradient(#3c3f57 1.8px, transparent 1.8px) 0 -0.9px, linear-gradient(90deg, #3c3f57 1.8px, #282A3A 1.8px) -0.9px 0;
+background-size: 45px 45px, 45px 45px, 22.5px 22.5px, 22.5px 22.5px;
+}
+
+.sus-text{
+color: #519872!important;
+font-weight: 600;
+}
+
+.sus-text-p{
+  color:azure;
+}
+
+.bg-sus-2 {
+  background-color: #d3d8f63c;
+}
+
+.sus-text-2{
+  color: #d3d8f6;
+  text-align: center;
+  padding: 2%;
+}
+
+.sus-text-2 h1{
+  font-size: 3vw;
 }
