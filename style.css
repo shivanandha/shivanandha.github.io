@@ -7,10 +7,12 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   font: inherit;
   vertical-align: baseline;
 }
+
 */
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 ::-moz-selection { /* Code for Firefox */
@@ -23,11 +25,6 @@ html {
   background:#d3d8f6;
 }
 
-.background-parti {
-  display:block;
-
-  }
-
 .bg-image{
     background-image: url("/assets/palmtrees.jpg");
     background-repeat: no-repeat;
@@ -35,7 +32,6 @@ html {
     background-position: 50% 90%;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
-
 }
 
 .hero1 {
@@ -214,4 +210,9 @@ font-weight: 600;
 
 .sus-text-2 h1{
   font-size: 3vw;
+}
+
+footer{
+  display: block;
+  height: fit-content;
 }
