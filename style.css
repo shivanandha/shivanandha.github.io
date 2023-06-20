@@ -10,19 +10,24 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 */
 
+
 html {
   scroll-behavior: smooth;
   height: 100%;
 }
 
+p{
+  font-weight: fw-normal;
+}
+
 ::-moz-selection { /* Code for Firefox */
-  color: #17ae9d;
-  background:#d3d8f6;
+  color: #454176;
+  background:#EEF4ED;
 }
 
 ::selection {
-  color: #17ae9d;
-  background:#d3d8f6;
+  color: #454176;
+  background:#EEF4ED;
 }
 
 .bg-image{
@@ -120,8 +125,8 @@ html {
   }
 
   
-  .background-1{
-    background-color: #faebd7;
+  .background-peach{
+    background-color: #d5dffd;
   }
 .background-black {
   background-color: rgb(38, 38, 38);
@@ -215,4 +220,16 @@ font-weight: 600;
 footer{
   display: block;
   height: fit-content;
+}
+
+/* blog css*/
+
+.blog-container{
+  padding: 2%;
+}
+
+.center {
+  margin: auto;
+  width: 75%;
+  padding: 1.5%;
 }
