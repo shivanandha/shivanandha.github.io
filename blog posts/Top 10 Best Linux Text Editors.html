@@ -76,7 +76,7 @@
         print-color-adjust: exact;
       }
 
-      html,
+      /*      html,
       body {
         margin: 0;
         padding: 0;
@@ -85,7 +85,7 @@
       body {
         width: fit-content;
       }
-
+*/
       a,
       a.visited {
         color: inherit;
@@ -180,10 +180,10 @@
         }
       }
 
-      @page {
+      /*     @page {
         margin: 1in;
       }
-
+*/
       .collection-content {
         font-size: 0.875rem;
       }
@@ -966,506 +966,519 @@
         </div>
       </div>
     </nav>
-    <div class="container">
-      <article id="0fc0c5f5-e583-4fa6-aa8b-b7b06725b261" class="page sans">
-        <header>
-          <img
-            class="page-cover-image"
-            src="https://images.unsplash.com/photo-1529465230221-a0d10e46fcbb?ixlib=rb-4.0.3&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb"
-            style="object-position: center 41.910000000000004%"
-          />
-          <h1 class="page-title">Top 10 Best Linux Text Editors</h1>
-          <p class="page-description"></p>
-        </header>
-        <div class="page-body">
-          <p id="3627db67-6f4f-4014-a550-005174af372c" class=""></p>
-          <h2 id="316fe1bd-6731-4bf6-b369-9cd62e59c8d2" class="">
-            Introduction
-          </h2>
-          <p id="20d9772b-27e0-45b3-99d6-e5e7530893cb" class="">
-            Hello there! As a Linux user, you know how important it is to find
-            the right text editor. It can be a daunting task. Text editors are a
-            critical tool for developers and programmers, and choosing the wrong
-            one can make coding a frustrating experience. But don&#x27;t worry,
-            we&#x27;re here to help. In this blog post, we will explore the top
-            10 best Linux text editors that provide an excellent user experience
-            and are highly customizable to match your needs.
-          </p>
-          <h2 id="9b2b9586-c0b5-45fb-8a6d-897ef116cd05" class="">1. Vim</h2>
-          <p id="8ee3440e-9f08-4c79-955f-7d365fc7c6c2" class="">
-            Vim is one of the most popular and powerful text editors for Linux.
-            It is a command-line editor that is highly customizable and provides
-            a vast array of features that make editing efficient. Vim has a
-            steep learning curve, but once you master it, you can edit code at
-            lightning speed. For example, Vim has various modes such as the
-            Normal mode and Insert mode, each with its own set of commands.
-            Additionally, Vim supports macros, which can save time by recording
-            and playing back a series of commands.
-          </p>
-          <p id="c71f859a-df50-4ced-aed9-a091d5d858e0" class="">
-            For more information about Vim visit their website
-            <mark class="highlight-blue"
-              ><a href="https://www.vim.org/">https://www.vim.org</a></mark
-            ><mark class="highlight-blue">/ </mark>
-          </p>
-          <figure id="ddf12ffd-e328-45d2-b9f2-2d6d" class="image">
-            <a href="/assets/Text_editors/Untitled.png"
-              ><img
-                style="width: 876px"
-                src="/assets/Text_editors/Untitled.png"
-            /></a>
-            <figcaption>Vim Screenshot</figcaption>
-          </figure>
-          <p id="8b598578-bedb-4b69-b8b5-1c6901615bc3" class="">
-            <strong>Installing Vim</strong>
-          </p>
-          <p id="c91d84fb-da64-40d5-8b70-328d64c6fb9b" class="">
-            Below are two methods to install Vim on Linux:
-          </p>
-          <ul id="ba0b3c98-e39c-41e4-8b9f-76efd9ab1e70" class="bulleted-list">
-            <li style="list-style-type: disc">Using git</li>
-          </ul>
-          <p id="90351b6f-249a-404d-ad2f-8580172c2ef5" class="">
-            This is the simplest and most efficient way to obtain the latest
-            version, including all patches. This requires the &quot;git&quot;
-            command.
-          </p>
-          <pre id="2e1516d9-49ad-44e1-b55e-92c4bbd7cf90" class="code code-wrap">
+    <div class="container-fluid">
+      <div class="container">
+        <article id="article" class="page sans">
+          <header>
+            <img
+              class="page-cover-image"
+              src="https://images.unsplash.com/photo-1529465230221-a0d10e46fcbb?ixlib=rb-4.0.3&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb"
+              style="object-position: center 41.910000000000004%"
+            />
+            <h1 class="page-title">Top 10 Best Linux Text Editors</h1>
+            <p class="page-description"></p>
+          </header>
+          <div class="page-body">
+            <p id="3627db67-6f4f-4014-a550-005174af372c" class=""></p>
+            <h2 id="316fe1bd-6731-4bf6-b369-9cd62e59c8d2" class="">
+              Introduction
+            </h2>
+            <p id="20d9772b-27e0-45b3-99d6-e5e7530893cb" class="">
+              Hello there! As a Linux user, you know how important it is to find
+              the right text editor. It can be a daunting task. Text editors are
+              a critical tool for developers and programmers, and choosing the
+              wrong one can make coding a frustrating experience. But don&#x27;t
+              worry, we&#x27;re here to help. In this blog post, we will explore
+              the top 10 best Linux text editors that provide an excellent user
+              experience and are highly customizable to match your needs.
+            </p>
+            <h2 id="9b2b9586-c0b5-45fb-8a6d-897ef116cd05" class="">1. Vim</h2>
+            <p id="8ee3440e-9f08-4c79-955f-7d365fc7c6c2" class="">
+              Vim is one of the most popular and powerful text editors for
+              Linux. It is a command-line editor that is highly customizable and
+              provides a vast array of features that make editing efficient. Vim
+              has a steep learning curve, but once you master it, you can edit
+              code at lightning speed. For example, Vim has various modes such
+              as the Normal mode and Insert mode, each with its own set of
+              commands. Additionally, Vim supports macros, which can save time
+              by recording and playing back a series of commands.
+            </p>
+            <p id="c71f859a-df50-4ced-aed9-a091d5d858e0" class="">
+              For more information about Vim visit their website
+              <mark class="highlight-blue"
+                ><a href="https://www.vim.org/">https://www.vim.org</a></mark
+              ><mark class="highlight-blue">/ </mark>
+            </p>
+            <figure id="ddf12ffd-e328-45d2-b9f2-2d6d" class="image">
+              <a href="/assets/Text_editors/Untitled.png"
+                ><img
+                  style="width: 876px"
+                  src="/assets/Text_editors/Untitled.png"
+              /></a>
+              <figcaption>Vim Screenshot</figcaption>
+            </figure>
+            <p id="8b598578-bedb-4b69-b8b5-1c6901615bc3" class="">
+              <strong>Installing Vim</strong>
+            </p>
+            <p id="c91d84fb-da64-40d5-8b70-328d64c6fb9b" class="">
+              Below are two methods to install Vim on Linux:
+            </p>
+            <ul id="ba0b3c98-e39c-41e4-8b9f-76efd9ab1e70" class="bulleted-list">
+              <li style="list-style-type: disc">Using git</li>
+            </ul>
+            <p id="90351b6f-249a-404d-ad2f-8580172c2ef5" class="">
+              This is the simplest and most efficient way to obtain the latest
+              version, including all patches. This requires the &quot;git&quot;
+              command.
+            </p>
+            <pre
+              id="2e1516d9-49ad-44e1-b55e-92c4bbd7cf90"
+              class="code code-wrap"
+            >
 <code>git clone &lt;https://github.com/vim/vim.git&gt;
 cd vim/src
 make
 </code></pre>
-          <ul id="2a0de5e1-511f-46c4-9e98-d008e2c06666" class="bulleted-list">
-            <li style="list-style-type: disc">Using apt-get</li>
-          </ul>
-          <p id="152be8b5-d47a-4764-a11a-e22786f93b48" class="">
-            You can use this method if you are using a Debian-based Linux
-            distribution such as Ubuntu.
-          </p>
-          <pre
-            id="810c94ab-9b9f-498c-9e4b-aa53f43135cb"
-            class="code code-wrap"
-          ><code>sudo apt-get update
+            <ul id="2a0de5e1-511f-46c4-9e98-d008e2c06666" class="bulleted-list">
+              <li style="list-style-type: disc">Using apt-get</li>
+            </ul>
+            <p id="152be8b5-d47a-4764-a11a-e22786f93b48" class="">
+              You can use this method if you are using a Debian-based Linux
+              distribution such as Ubuntu.
+            </p>
+            <pre
+              id="810c94ab-9b9f-498c-9e4b-aa53f43135cb"
+              class="code code-wrap"
+            ><code>sudo apt-get update
 sudo apt-get install vim
 </code></pre>
-          <p id="4632a508-c60b-40e1-9408-3fddb926968f" class="">
-            Note: If you are using a different Linux distribution, consult your
-            distribution&#x27;s documentation for the appropriate package
-            manager command to install Vim.
-          </p>
-          <h2 id="bd7909dd-eebd-4c76-a901-9266d89045ea" class="">2. Emacs</h2>
-          <p id="a74449b1-bfb0-4588-bf0c-ccc77402d6dc" class="">
-            Emacs is another powerful text editor for Linux that is highly
-            customizable to match your needs. It is an open-source editor that
-            provides a robust set of features that make editing efficient. Emacs
-            has a steep learning curve, but once you master it, you can use it
-            for almost anything, from editing code to writing emails. Emacs has
-            a feature called Org mode, which is a powerful tool for organizing
-            your tasks, notes, and ideas. Org mode supports hierarchical lists,
-            tables, and even spreadsheets.
-          </p>
-          <figure id="b37feef0-753e-4b48-b1cf-33be55b6f107" class="image">
-            <a href="/assets/Text_editors/Untitled 1.png"
-              ><img
-                style="width: 876px"
-                src="/assets/Text_editors/Untitled 1.png"
-            /></a>
-            <figcaption>Emacs Screenshot</figcaption>
-          </figure>
-          <p id="e17f2582-77f0-4dac-8dd0-a9da2447e85a" class="">
-            <strong>Installing Emacs</strong>
-          </p>
-          <p id="4b3e42db-58f9-4ec8-bc4f-2169a542bc2b" class="">
-            <strong>Simple way</strong>
-          </p>
-          <pre
-            id="8381313b-68c1-42b4-99de-5d27cd3ef38a"
-            class="code code-wrap"
-          ><code>sudo apt install emacs</code></pre>
-          <p id="9e42260c-a61a-4762-a1e9-2deae6ecccd2" class=""></p>
-          <p id="548e0370-7dfe-4b52-9124-d542ad6c77b0" class="">
-            <strong>Mind-boggling way</strong>
-          </p>
-          <ul id="957fa77f-f6b5-4da5-aa66-e95ba3910e8f" class="bulleted-list">
-            <li style="list-style-type: disc">
-              Download the Emacs sources. You can find them on
-              <a href="https://ftp.gnu.org/">https://ftp.gnu.org</a> or on
-              <a href="https://www.gnu.org/software/emacs/download.html"
-                >https://www.gnu.org/software/emacs/download.html</a
-              >. The source files are available as
-              <code>emacs-VERSION.tar.gz</code> (replace
-              <code>VERSION</code> with the relevant version number, e.g.,
-              <code>28.1</code>)
-            </li>
-          </ul>
-          <ul id="fe889dd1-cc9e-4d83-a05a-06ca86114826" class="bulleted-list">
-            <li style="list-style-type: disc">
-              Next, uncompress and extract the source files. This requires the
-              <code>tar</code> program, which is a standard utility. If your
-              system doesn&#x27;t have it, you can download it from
-              <a href="https://www.gnu.org/software/tar/"
-                >https://www.gnu.org/software/tar/</a
-              >.
-              <pre
-                id="4a0f0d43-cdc8-4f4a-9e9f-1d01f4995703"
-                class="code code-wrap"
-              ><code>tar -xzvf emacs-VERSION.tar.gz
+            <p id="4632a508-c60b-40e1-9408-3fddb926968f" class="">
+              Note: If you are using a different Linux distribution, consult
+              your distribution&#x27;s documentation for the appropriate package
+              manager command to install Vim.
+            </p>
+            <h2 id="bd7909dd-eebd-4c76-a901-9266d89045ea" class="">2. Emacs</h2>
+            <p id="a74449b1-bfb0-4588-bf0c-ccc77402d6dc" class="">
+              Emacs is another powerful text editor for Linux that is highly
+              customizable to match your needs. It is an open-source editor that
+              provides a robust set of features that make editing efficient.
+              Emacs has a steep learning curve, but once you master it, you can
+              use it for almost anything, from editing code to writing emails.
+              Emacs has a feature called Org mode, which is a powerful tool for
+              organizing your tasks, notes, and ideas. Org mode supports
+              hierarchical lists, tables, and even spreadsheets.
+            </p>
+            <figure id="b37feef0-753e-4b48-b1cf-33be55b6f107" class="image">
+              <a href="/assets/Text_editors/Untitled 1.png"
+                ><img
+                  style="width: 876px"
+                  src="/assets/Text_editors/Untitled 1.png"
+              /></a>
+              <figcaption>Emacs Screenshot</figcaption>
+            </figure>
+            <p id="e17f2582-77f0-4dac-8dd0-a9da2447e85a" class="">
+              <strong>Installing Emacs</strong>
+            </p>
+            <p id="4b3e42db-58f9-4ec8-bc4f-2169a542bc2b" class="">
+              <strong>Simple way</strong>
+            </p>
+            <pre
+              id="8381313b-68c1-42b4-99de-5d27cd3ef38a"
+              class="code code-wrap"
+            ><code>sudo apt install emacs</code></pre>
+            <p id="9e42260c-a61a-4762-a1e9-2deae6ecccd2" class=""></p>
+            <p id="548e0370-7dfe-4b52-9124-d542ad6c77b0" class="">
+              <strong>Mind-boggling way</strong>
+            </p>
+            <ul id="957fa77f-f6b5-4da5-aa66-e95ba3910e8f" class="bulleted-list">
+              <li style="list-style-type: disc">
+                Download the Emacs sources. You can find them on
+                <a href="https://ftp.gnu.org/">https://ftp.gnu.org</a> or on
+                <a href="https://www.gnu.org/software/emacs/download.html"
+                  >https://www.gnu.org/software/emacs/download.html</a
+                >. The source files are available as
+                <code>emacs-VERSION.tar.gz</code> (replace
+                <code>VERSION</code> with the relevant version number, e.g.,
+                <code>28.1</code>)
+              </li>
+            </ul>
+            <ul id="fe889dd1-cc9e-4d83-a05a-06ca86114826" class="bulleted-list">
+              <li style="list-style-type: disc">
+                Next, uncompress and extract the source files. This requires the
+                <code>tar</code> program, which is a standard utility. If your
+                system doesn&#x27;t have it, you can download it from
+                <a href="https://www.gnu.org/software/tar/"
+                  >https://www.gnu.org/software/tar/</a
+                >.
+                <pre
+                  id="4a0f0d43-cdc8-4f4a-9e9f-1d01f4995703"
+                  class="code code-wrap"
+                ><code>tar -xzvf emacs-VERSION.tar.gz
 </code></pre>
-            </li>
-          </ul>
-          <ul id="866658b4-af6f-43af-aa97-f3651c9cf538" class="bulleted-list">
-            <li style="list-style-type: disc">
-              At this point, the Emacs sources should be sitting in a directory
-              called <code>emacs-VERSION</code>. On most common Unix and
-              Unix-like systems, you should be able to compile Emacs with the
-              following commands:
-              <pre
-                id="e9f8cc28-da0a-4cbe-9404-9df76aaa65fd"
-                class="code code-wrap"
-              ><code>cd emacs-VERSION
+              </li>
+            </ul>
+            <ul id="866658b4-af6f-43af-aa97-f3651c9cf538" class="bulleted-list">
+              <li style="list-style-type: disc">
+                At this point, the Emacs sources should be sitting in a
+                directory called <code>emacs-VERSION</code>. On most common Unix
+                and Unix-like systems, you should be able to compile Emacs with
+                the following commands:
+                <pre
+                  id="e9f8cc28-da0a-4cbe-9404-9df76aaa65fd"
+                  class="code code-wrap"
+                ><code>cd emacs-VERSION
 ./configure         # configure Emacs for your particular system
 make                # use Makefile to build components, then Emacs
 </code></pre>
-              <p id="b9288c05-e0d0-4e7c-bcae-01808e929068" class="">
-                If the <code>make</code> completes successfully, you can go on
-                to install it. (See
-                <a
-                  href="https://www.gnu.org/software/emacs/manual/html_node/efaq/Problems-building-Emacs.html"
-                  >https://www.gnu.org/software/emacs/manual/html_node/efaq/Problems-building-Emacs.html</a
-                >
-                if you weren&#x27;t successful.)
-              </p>
-            </li>
-          </ul>
-          <ul id="4f9fad8a-99de-4fb3-82b1-949d9778c71b" class="bulleted-list">
-            <li style="list-style-type: disc">
-              By default, Emacs is installed in <code>/usr/local/bin</code>. To
-              actually install files, become the superuser and type
-              <code>make install</code>.
-              <p id="a601d3ac-677e-4439-97db-337378de1767" class="">
-                Note that <code>make install</code> will overwrite
-                <code>/usr/local/bin/emacs</code> and any Emacs Info files that
-                might be in <code>/usr/local/share/info/</code>.
-              </p>
-            </li>
-          </ul>
-          <p id="9ba83a53-fa59-4064-87e2-49500bbe6341" class="">
-            Source:
-            <a
-              href="https://www.gnu.org/software/emacs/manual/html_node/efaq/Installing-Emacs.html"
-              >https://www.gnu.org/software/emacs/manual/html_node/efaq/Installing-Emacs.html</a
-            >
-          </p>
-          <h2 id="004cffa5-555d-4616-bfe3-2bdfdb68459e" class="">
-            3. Sublime Text
-          </h2>
-          <p id="98f90658-f71f-4e34-abb9-5685ffbbb89a" class="">
-            Sublime Text is a popular cross-platform text editor that is highly
-            customizable and provides a vast array of features that make editing
-            efficient. It has a user-friendly interface and syntax highlighting
-            for over 40 programming languages. Sublime Text has a free trial,
-            but you have to purchase it to continue using it. Sublime Text has a
-            feature called Distraction-Free Mode, which hides all distractions
-            from the interface and allows you to focus on your code.
-          </p>
-          <p id="342acfc4-3f40-4c8f-9624-3df24f9ba630" class="">
-            For more information visit their
-            <a href="https://www.sublimetext.com/">website</a>.
-          </p>
-          <figure id="ae6380df-9538-465c-bcb1-0153bfd696c7" class="image">
-            <a href="/assets/Text_editors/Untitled 2.png"
-              ><img
-                style="width: 876px"
-                src="/assets/Text_editors/Untitled 2.png"
-            /></a>
-            <figcaption>Sublime Screenshot</figcaption>
-          </figure>
-          <p id="b888268d-3fa6-49f4-b413-df2cbb954bef" class="">
-            <strong>Installing Sublime</strong>
-          </p>
-          <pre
-            id="e9366b66-5b56-48f9-b0fe-4d0b34790e95"
-            class="code code-wrap"
-          ><code>sudo apt-get update
+                <p id="b9288c05-e0d0-4e7c-bcae-01808e929068" class="">
+                  If the <code>make</code> completes successfully, you can go on
+                  to install it. (See
+                  <a
+                    href="https://www.gnu.org/software/emacs/manual/html_node/efaq/Problems-building-Emacs.html"
+                    >https://www.gnu.org/software/emacs/manual/html_node/efaq/Problems-building-Emacs.html</a
+                  >
+                  if you weren&#x27;t successful.)
+                </p>
+              </li>
+            </ul>
+            <ul id="4f9fad8a-99de-4fb3-82b1-949d9778c71b" class="bulleted-list">
+              <li style="list-style-type: disc">
+                By default, Emacs is installed in <code>/usr/local/bin</code>.
+                To actually install files, become the superuser and type
+                <code>make install</code>.
+                <p id="a601d3ac-677e-4439-97db-337378de1767" class="">
+                  Note that <code>make install</code> will overwrite
+                  <code>/usr/local/bin/emacs</code> and any Emacs Info files
+                  that might be in <code>/usr/local/share/info/</code>.
+                </p>
+              </li>
+            </ul>
+            <p id="9ba83a53-fa59-4064-87e2-49500bbe6341" class="">
+              Source:
+              <a
+                href="https://www.gnu.org/software/emacs/manual/html_node/efaq/Installing-Emacs.html"
+                >https://www.gnu.org/software/emacs/manual/html_node/efaq/Installing-Emacs.html</a
+              >
+            </p>
+            <h2 id="004cffa5-555d-4616-bfe3-2bdfdb68459e" class="">
+              3. Sublime Text
+            </h2>
+            <p id="98f90658-f71f-4e34-abb9-5685ffbbb89a" class="">
+              Sublime Text is a popular cross-platform text editor that is
+              highly customizable and provides a vast array of features that
+              make editing efficient. It has a user-friendly interface and
+              syntax highlighting for over 40 programming languages. Sublime
+              Text has a free trial, but you have to purchase it to continue
+              using it. Sublime Text has a feature called Distraction-Free Mode,
+              which hides all distractions from the interface and allows you to
+              focus on your code.
+            </p>
+            <p id="342acfc4-3f40-4c8f-9624-3df24f9ba630" class="">
+              For more information visit their
+              <a href="https://www.sublimetext.com/">website</a>.
+            </p>
+            <figure id="ae6380df-9538-465c-bcb1-0153bfd696c7" class="image">
+              <a href="/assets/Text_editors/Untitled 2.png"
+                ><img
+                  style="width: 876px"
+                  src="/assets/Text_editors/Untitled 2.png"
+              /></a>
+              <figcaption>Sublime Screenshot</figcaption>
+            </figure>
+            <p id="b888268d-3fa6-49f4-b413-df2cbb954bef" class="">
+              <strong>Installing Sublime</strong>
+            </p>
+            <pre
+              id="e9366b66-5b56-48f9-b0fe-4d0b34790e95"
+              class="code code-wrap"
+            ><code>sudo apt-get update
 sudo apt-get install sublime-text</code></pre>
-          <h2 id="387913f0-3653-40eb-99d8-972e97f47982" class="">4. Atom</h2>
-          <p id="53b407ed-1886-4054-bb3f-d280d2dde383" class="">
-            Atom is an open-source text editor that is highly customizable and
-            provides a vast array of features that make editing efficient. It
-            has a user-friendly interface and syntax highlighting for over 40
-            programming languages. Atom has a free trial, but you have to
-            purchase it to continue using it. Atom has a feature called
-            Teletype, which allows you to collaborate with other developers in
-            real-time.
-          </p>
-          <p id="57bbcdd9-48d9-47c3-b066-33da0840b4b3" class="">
-            for more details visit
-            <a href="https://github.com/atom/atom"
-              ><strong>GitHubLink</strong></a
-            >
-          </p>
-          <figure id="fa9eb567-d1e7-4302-8414-ee1af82bf6e4" class="image">
-            <a
-              href="https://user-images.githubusercontent.com/378023/49132478-f4b77680-f31f-11e8-9e10-e8454d8d9b7e.png"
-              ><img
-                src="https://user-images.githubusercontent.com/378023/49132478-f4b77680-f31f-11e8-9e10-e8454d8d9b7e.png"
-            /></a>
-          </figure>
-          <p id="14ead1ce-80cc-4033-bea6-9be4bdcf092f" class="">
-            <strong>Installing Atom</strong>
-          </p>
-          <ul id="899b5553-f715-4ca0-ad85-0e705f2679bc" class="bulleted-list">
-            <li style="list-style-type: disc">
-              • Install Atom using Snap (suitable for all Snap enabled Linux
-              distributions): <code>sudo snap install atom</code>
-            </li>
-          </ul>
-          <ul id="f63bc1d2-a903-407e-bda2-75b96cf31b21" class="bulleted-list">
-            <li style="list-style-type: disc">
-              using apt <code>sudo apt install atom</code>
-            </li>
-          </ul>
-          <h2 id="c9640c5a-664e-48a6-86cf-50fb079c98c7" class="">5. Kate</h2>
-          <p id="26421b85-b990-44c3-99fd-707bdbd56ac6" class="">
-            Kate is a powerful text editor for Linux that is highly customizable
-            and provides a vast array of features that make editing efficient.
-            It has a user-friendly interface and syntax highlighting for over
-            200 programming languages. Kate is free and open-source software.
-            Kate has a feature called Vi Input Mode, which allows you to use
-            Vim-like commands in Kate.
-          </p>
-          <p id="0f1b2033-8e48-4e03-81dd-e3311ca341d1" class="">
-            For more details visit
-            <a href="https://kate-editor.org/">https://kate-editor.org/</a>
-          </p>
-          <figure id="5b7439a7-5a68-4020-92c8-efeae12190ca" class="image">
-            <a href="https://kate-editor.org/images/kate-window.webp"
-              ><img src="https://kate-editor.org/images/kate-window.webp"
-            /></a>
-            <figcaption>Kate Screenshot</figcaption>
-          </figure>
-          <p id="f3679adc-559d-4da0-9646-3decb271f759" class="">
-            <strong>Installing Kate</strong>
-          </p>
-          <ul id="76500b28-a457-460a-99ce-2046199063e2" class="bulleted-list">
-            <li style="list-style-type: disc">Using git</li>
-          </ul>
-          <pre
-            id="f8f7dfa4-bf39-4395-818d-ed8ba8e8af0a"
-            class="code code-wrap"
-          ><code>sudo apt install kate</code></pre>
-          <h2 id="84cc86a2-6921-4aec-80e6-637f9dd2ad50" class="">6. Gedit</h2>
-          <p id="5f7f5ab1-76c9-4f56-9cf7-add5ea5c43d3" class="">
-            Gedit is a simple and easy-to-use text editor for Linux that is
-            highly customizable and provides a vast array of features that make
-            editing efficient. It has a user-friendly interface and syntax
-            highlighting for over 40 programming languages. Gedit is free and
-            open-source software. Gedit has a feature called Snippets, which
-            allows you to insert frequently used code snippets with a few
-            keystrokes.
-          </p>
-          <p id="9b13ce46-c38d-48f6-a110-894ba8e55007" class="">
-            For more details visit
-            <a href="https://wiki.gnome.org/Apps/Gedit"
-              >https://wiki.gnome.org/Apps/Gedit</a
-            >
-            or <a href="https://github.com/GNOME/gedit">GitHub</a>
-          </p>
-          <figure id="cfa0ae5b-2a13-42d1-b092-b0cfbcab75c6" class="image">
-            <a
-              href="https://gitlab.gnome.org/swilmet/gedit-extra/-/raw/main/screenshots/screenshot.png"
-              ><img
-                src="https://gitlab.gnome.org/swilmet/gedit-extra/-/raw/main/screenshots/screenshot.png"
-            /></a>
-            <figcaption>Gedit Screenshot</figcaption>
-          </figure>
-          <p id="d5d5869a-3379-4610-b7ef-f679f671e30d" class="">
-            <strong>Installing Gedit</strong>
-          </p>
-          <ul id="89333d9a-8d59-4625-8ec3-cd110853b995" class="bulleted-list">
-            <li style="list-style-type: disc">Using apt</li>
-          </ul>
-          <pre
-            id="66fd7a4d-77a6-43ba-9894-2f82ecee3e01"
-            class="code code-wrap"
-          ><code> sudo apt install gedit</code></pre>
-          <h2 id="6e2b3731-b3cb-4576-a97b-372a09326855" class="">7. Geany</h2>
-          <p id="7e537c33-86f7-4465-b5da-5b3eedc6c6d0" class="">
-            Geany is a lightweight text editor for Linux that is highly
-            customizable and provides a vast array of features that make editing
-            efficient. It has a user-friendly interface and syntax highlighting
-            for over 50 programming languages. Geany is free and open-source
-            software. Geany has a feature called Code Folding, which allows you
-            to collapse and expand sections of your code for better
-            organization.
-          </p>
-          <p id="63da4d4c-2cd9-447b-9785-9a0beaed1e0d" class="">
-            For more information visit their
-            <a
-              href="https://www.geany.org/media/uploads/screenshots/geany_dark_2019-05-20.png"
-              >website</a
-            >.
-          </p>
-          <figure id="0bbd5391-d70f-4365-a56a-677698a5405d" class="image">
-            <a
-              href="https://www.geany.org/media/uploads/screenshots/geany_dark_2019-05-20.png"
-              ><img
-                src="https://www.geany.org/media/uploads/screenshots/geany_dark_2019-05-20.png"
-            /></a>
-            <figcaption>Geany Screenshot</figcaption>
-          </figure>
-          <p id="05ac2069-02ae-4ca6-b5e5-24ae970daef1" class="">
-            <strong>Installing Geany</strong>
-          </p>
-          <ul id="e6515713-87f0-4bfb-9ef4-5652b29a3213" class="bulleted-list">
-            <li style="list-style-type: disc">Using apt</li>
-          </ul>
-          <pre
-            id="6af449b5-e3e0-42c7-aa89-58d8e52353d8"
-            class="code code-wrap"
-          ><code>sudo apt install geany</code></pre>
-          <p id="64f962c2-52c9-422c-aa32-a670cd3746ac" class=""></p>
-          <h2 id="56fafccf-8575-495f-b12d-88ea9ed769e5" class="">
-            8. Visual Studio Code
-          </h2>
-          <p id="a7403799-2a5d-4488-a1ab-f2eb8f92b129" class="">
-            Visual Studio Code is a cross-platform text editor that is highly
-            customizable and provides a vast array of features that make editing
-            efficient. It has a user-friendly interface and syntax highlighting
-            for over 40 programming languages. Visual Studio Code is free and
-            open-source software. Visual Studio Code has a feature called
-            IntelliSense, which provides intelligent code completion, code
-            refactoring, and other useful features.
-          </p>
-          <p id="fb8fb260-5f82-496a-826d-f1f9c3c20bac" class="">
-            For more details visit their
-            <a href="https://code.visualstudio.com/">website</a>.
-          </p>
-          <figure id="2706831c-1a33-4240-acfd-86dcbed984ab" class="image">
-            <a
-              href="https://code.visualstudio.com/assets/home/home-screenshot-mac.png"
-              ><img
-                src="https://code.visualstudio.com/assets/home/home-screenshot-mac.png"
-            /></a>
-            <figcaption>VS code Screenshot</figcaption>
-          </figure>
-          <p id="d169aead-d810-48b1-adf7-d4da184f2676" class="">
-            <strong>Installing VS Code</strong>
-          </p>
-          <ul id="5739b05a-544c-4fed-9a56-70142f688712" class="bulleted-list">
-            <li style="list-style-type: disc">Using snap package</li>
-          </ul>
-          <pre
-            id="0e6dfbc3-92a7-489f-83fa-559684d87d77"
-            class="code code-wrap"
-          ><code>sudo snap install code</code></pre>
-          <p id="0565357d-3083-4b01-a49e-8924b6623968" class=""></p>
-          <h2 id="9da7bd94-366a-444c-8006-f153c1ad3c3f" class="">9. Nano</h2>
-          <p id="6d14b7fb-8198-4ab4-9532-642a18056617" class="">
-            Nano is a simple and easy-to-use text editor for Linux that is
-            highly customizable and provides a vast array of features that make
-            editing efficient. It is a command-line editor that is easy to learn
-            and use. Nano is free and open-source software. Nano has a feature
-            called Search and Replace, which allows you to search for a specific
-            string and replace it with another string.
-          </p>
-          <p id="1ea1b794-92e5-4508-a09c-f47d80eed682" class="">
-            For more details visit their
-            <a href="https://www.nano-editor.org/">website</a>.
-          </p>
-          <figure id="761445b3-d341-4e9d-9c61-70671019851e" class="image">
-            <a href="https://www.nano-editor.org/nano-5.7.png"
-              ><img src="https://www.nano-editor.org/nano-5.7.png"
-            /></a>
-            <figcaption>Nano Screenshot</figcaption>
-          </figure>
-          <p id="f8501f1a-cad1-4510-a001-7ffb87ef3940" class="">
-            <strong>Installing Nano</strong>
-          </p>
-          <ul id="da731412-e70f-471c-bb43-9536ec30dd0f" class="bulleted-list">
-            <li style="list-style-type: disc">Using apt</li>
-          </ul>
-          <pre
-            id="3e599bb7-e415-4642-8653-7cfe29885afd"
-            class="code code-wrap"
-          ><code>sudo apt install nano</code></pre>
-          <h2 id="030b7a2f-e703-44f0-98dc-658961db2286" class="">
-            10. Brackets
-          </h2>
-          <p id="93b715ba-3cf1-4563-9ab6-49fe11a22da5" class="">
-            Brackets is an open-source text editor that is highly customizable
-            and provides a vast array of features that make editing efficient.
-            It has a user-friendly interface and syntax highlighting for over 40
-            programming languages. Brackets is free and open-source software.
-            Brackets has a feature called Live Preview, which allows you to see
-            the changes you make to your code in real-time in a web browser.
-          </p>
-          <p id="ebfab200-955c-4c7e-b221-9bd3b1ee1506" class="">
-            For more information visit their
-            <a href="https://brackets.io/">website</a>.
-          </p>
-          <figure id="7ee1d183-76ab-4f79-98f3-f53552b12eb6" class="image">
-            <a href="https://brackets.io/img/hero.png"
-              ><img src="https://brackets.io/img/hero.png"
-            /></a>
-            <figcaption>Bracket Screenshot</figcaption>
-          </figure>
-          <p id="00b5f648-2834-4a72-8639-dbda0d6e8ea2" class="">
-            <strong>Installing Bracket</strong>
-          </p>
-          <ul id="213a9a90-0dd6-46f0-96d1-9c99edda554b" class="bulleted-list">
-            <li style="list-style-type: disc">Using apt</li>
-          </ul>
-          <pre
-            id="371f41c1-0581-4765-985c-ab7ccdd23c43"
-            class="code code-wrap"
-          ><code>sudo apt install brackets</code></pre>
-          <h2 id="67a71872-093b-40bb-9eff-072016077d62" class="">Conclusion</h2>
-          <p id="fb844f9a-531e-4155-bac3-4afde51664ea" class="">
-            In conclusion, choosing the right text editor is crucial for a
-            developer&#x27;s productivity. The text editors listed above are
-            among the best Linux text editors available, and each has its unique
-            features and capabilities. Whether you prefer a command-line editor
-            or a GUI-based editor, there is a text editor on this list that will
-            meet your needs. We hope this blog post has helped you find the
-            perfect Linux text editor for your coding needs. Remember, always
-            choose a text editor that matches your needs and preferences, and
-            most importantly, one that makes coding a fun and enjoyable
-            experience.
-          </p>
-          <p id="12290461-22b6-45d3-ac05-56eb30684a08" class=""></p>
+            <h2 id="387913f0-3653-40eb-99d8-972e97f47982" class="">4. Atom</h2>
+            <p id="53b407ed-1886-4054-bb3f-d280d2dde383" class="">
+              Atom is an open-source text editor that is highly customizable and
+              provides a vast array of features that make editing efficient. It
+              has a user-friendly interface and syntax highlighting for over 40
+              programming languages. Atom has a free trial, but you have to
+              purchase it to continue using it. Atom has a feature called
+              Teletype, which allows you to collaborate with other developers in
+              real-time.
+            </p>
+            <p id="57bbcdd9-48d9-47c3-b066-33da0840b4b3" class="">
+              for more details visit
+              <a href="https://github.com/atom/atom"
+                ><strong>GitHubLink</strong></a
+              >
+            </p>
+            <figure id="fa9eb567-d1e7-4302-8414-ee1af82bf6e4" class="image">
+              <a
+                href="https://user-images.githubusercontent.com/378023/49132478-f4b77680-f31f-11e8-9e10-e8454d8d9b7e.png"
+                ><img
+                  src="https://user-images.githubusercontent.com/378023/49132478-f4b77680-f31f-11e8-9e10-e8454d8d9b7e.png"
+              /></a>
+            </figure>
+            <p id="14ead1ce-80cc-4033-bea6-9be4bdcf092f" class="">
+              <strong>Installing Atom</strong>
+            </p>
+            <ul id="899b5553-f715-4ca0-ad85-0e705f2679bc" class="bulleted-list">
+              <li style="list-style-type: disc">
+                • Install Atom using Snap (suitable for all Snap enabled Linux
+                distributions): <code>sudo snap install atom</code>
+              </li>
+            </ul>
+            <ul id="f63bc1d2-a903-407e-bda2-75b96cf31b21" class="bulleted-list">
+              <li style="list-style-type: disc">
+                using apt <code>sudo apt install atom</code>
+              </li>
+            </ul>
+            <h2 id="c9640c5a-664e-48a6-86cf-50fb079c98c7" class="">5. Kate</h2>
+            <p id="26421b85-b990-44c3-99fd-707bdbd56ac6" class="">
+              Kate is a powerful text editor for Linux that is highly
+              customizable and provides a vast array of features that make
+              editing efficient. It has a user-friendly interface and syntax
+              highlighting for over 200 programming languages. Kate is free and
+              open-source software. Kate has a feature called Vi Input Mode,
+              which allows you to use Vim-like commands in Kate.
+            </p>
+            <p id="0f1b2033-8e48-4e03-81dd-e3311ca341d1" class="">
+              For more details visit
+              <a href="https://kate-editor.org/">https://kate-editor.org/</a>
+            </p>
+            <figure id="5b7439a7-5a68-4020-92c8-efeae12190ca" class="image">
+              <a href="https://kate-editor.org/images/kate-window.webp"
+                ><img src="https://kate-editor.org/images/kate-window.webp"
+              /></a>
+              <figcaption>Kate Screenshot</figcaption>
+            </figure>
+            <p id="f3679adc-559d-4da0-9646-3decb271f759" class="">
+              <strong>Installing Kate</strong>
+            </p>
+            <ul id="76500b28-a457-460a-99ce-2046199063e2" class="bulleted-list">
+              <li style="list-style-type: disc">Using git</li>
+            </ul>
+            <pre
+              id="f8f7dfa4-bf39-4395-818d-ed8ba8e8af0a"
+              class="code code-wrap"
+            ><code>sudo apt install kate</code></pre>
+            <h2 id="84cc86a2-6921-4aec-80e6-637f9dd2ad50" class="">6. Gedit</h2>
+            <p id="5f7f5ab1-76c9-4f56-9cf7-add5ea5c43d3" class="">
+              Gedit is a simple and easy-to-use text editor for Linux that is
+              highly customizable and provides a vast array of features that
+              make editing efficient. It has a user-friendly interface and
+              syntax highlighting for over 40 programming languages. Gedit is
+              free and open-source software. Gedit has a feature called
+              Snippets, which allows you to insert frequently used code snippets
+              with a few keystrokes.
+            </p>
+            <p id="9b13ce46-c38d-48f6-a110-894ba8e55007" class="">
+              For more details visit
+              <a href="https://wiki.gnome.org/Apps/Gedit"
+                >https://wiki.gnome.org/Apps/Gedit</a
+              >
+              or <a href="https://github.com/GNOME/gedit">GitHub</a>
+            </p>
+            <figure id="cfa0ae5b-2a13-42d1-b092-b0cfbcab75c6" class="image">
+              <a
+                href="https://gitlab.gnome.org/swilmet/gedit-extra/-/raw/main/screenshots/screenshot.png"
+                ><img
+                  src="https://gitlab.gnome.org/swilmet/gedit-extra/-/raw/main/screenshots/screenshot.png"
+              /></a>
+              <figcaption>Gedit Screenshot</figcaption>
+            </figure>
+            <p id="d5d5869a-3379-4610-b7ef-f679f671e30d" class="">
+              <strong>Installing Gedit</strong>
+            </p>
+            <ul id="89333d9a-8d59-4625-8ec3-cd110853b995" class="bulleted-list">
+              <li style="list-style-type: disc">Using apt</li>
+            </ul>
+            <pre
+              id="66fd7a4d-77a6-43ba-9894-2f82ecee3e01"
+              class="code code-wrap"
+            ><code> sudo apt install gedit</code></pre>
+            <h2 id="6e2b3731-b3cb-4576-a97b-372a09326855" class="">7. Geany</h2>
+            <p id="7e537c33-86f7-4465-b5da-5b3eedc6c6d0" class="">
+              Geany is a lightweight text editor for Linux that is highly
+              customizable and provides a vast array of features that make
+              editing efficient. It has a user-friendly interface and syntax
+              highlighting for over 50 programming languages. Geany is free and
+              open-source software. Geany has a feature called Code Folding,
+              which allows you to collapse and expand sections of your code for
+              better organization.
+            </p>
+            <p id="63da4d4c-2cd9-447b-9785-9a0beaed1e0d" class="">
+              For more information visit their
+              <a
+                href="https://www.geany.org/media/uploads/screenshots/geany_dark_2019-05-20.png"
+                >website</a
+              >.
+            </p>
+            <figure id="0bbd5391-d70f-4365-a56a-677698a5405d" class="image">
+              <a
+                href="https://www.geany.org/media/uploads/screenshots/geany_dark_2019-05-20.png"
+                ><img
+                  src="https://www.geany.org/media/uploads/screenshots/geany_dark_2019-05-20.png"
+              /></a>
+              <figcaption>Geany Screenshot</figcaption>
+            </figure>
+            <p id="05ac2069-02ae-4ca6-b5e5-24ae970daef1" class="">
+              <strong>Installing Geany</strong>
+            </p>
+            <ul id="e6515713-87f0-4bfb-9ef4-5652b29a3213" class="bulleted-list">
+              <li style="list-style-type: disc">Using apt</li>
+            </ul>
+            <pre
+              id="6af449b5-e3e0-42c7-aa89-58d8e52353d8"
+              class="code code-wrap"
+            ><code>sudo apt install geany</code></pre>
+            <p id="64f962c2-52c9-422c-aa32-a670cd3746ac" class=""></p>
+            <h2 id="56fafccf-8575-495f-b12d-88ea9ed769e5" class="">
+              8. Visual Studio Code
+            </h2>
+            <p id="a7403799-2a5d-4488-a1ab-f2eb8f92b129" class="">
+              Visual Studio Code is a cross-platform text editor that is highly
+              customizable and provides a vast array of features that make
+              editing efficient. It has a user-friendly interface and syntax
+              highlighting for over 40 programming languages. Visual Studio Code
+              is free and open-source software. Visual Studio Code has a feature
+              called IntelliSense, which provides intelligent code completion,
+              code refactoring, and other useful features.
+            </p>
+            <p id="fb8fb260-5f82-496a-826d-f1f9c3c20bac" class="">
+              For more details visit their
+              <a href="https://code.visualstudio.com/">website</a>.
+            </p>
+            <figure id="2706831c-1a33-4240-acfd-86dcbed984ab" class="image">
+              <a
+                href="https://code.visualstudio.com/assets/home/home-screenshot-mac.png"
+                ><img
+                  src="https://code.visualstudio.com/assets/home/home-screenshot-mac.png"
+              /></a>
+              <figcaption>VS code Screenshot</figcaption>
+            </figure>
+            <p id="d169aead-d810-48b1-adf7-d4da184f2676" class="">
+              <strong>Installing VS Code</strong>
+            </p>
+            <ul id="5739b05a-544c-4fed-9a56-70142f688712" class="bulleted-list">
+              <li style="list-style-type: disc">Using snap package</li>
+            </ul>
+            <pre
+              id="0e6dfbc3-92a7-489f-83fa-559684d87d77"
+              class="code code-wrap"
+            ><code>sudo snap install code</code></pre>
+            <p id="0565357d-3083-4b01-a49e-8924b6623968" class=""></p>
+            <h2 id="9da7bd94-366a-444c-8006-f153c1ad3c3f" class="">9. Nano</h2>
+            <p id="6d14b7fb-8198-4ab4-9532-642a18056617" class="">
+              Nano is a simple and easy-to-use text editor for Linux that is
+              highly customizable and provides a vast array of features that
+              make editing efficient. It is a command-line editor that is easy
+              to learn and use. Nano is free and open-source software. Nano has
+              a feature called Search and Replace, which allows you to search
+              for a specific string and replace it with another string.
+            </p>
+            <p id="1ea1b794-92e5-4508-a09c-f47d80eed682" class="">
+              For more details visit their
+              <a href="https://www.nano-editor.org/">website</a>.
+            </p>
+            <figure id="761445b3-d341-4e9d-9c61-70671019851e" class="image">
+              <a href="https://www.nano-editor.org/nano-5.7.png"
+                ><img src="https://www.nano-editor.org/nano-5.7.png"
+              /></a>
+              <figcaption>Nano Screenshot</figcaption>
+            </figure>
+            <p id="f8501f1a-cad1-4510-a001-7ffb87ef3940" class="">
+              <strong>Installing Nano</strong>
+            </p>
+            <ul id="da731412-e70f-471c-bb43-9536ec30dd0f" class="bulleted-list">
+              <li style="list-style-type: disc">Using apt</li>
+            </ul>
+            <pre
+              id="3e599bb7-e415-4642-8653-7cfe29885afd"
+              class="code code-wrap"
+            ><code>sudo apt install nano</code></pre>
+            <h2 id="030b7a2f-e703-44f0-98dc-658961db2286" class="">
+              10. Brackets
+            </h2>
+            <p id="93b715ba-3cf1-4563-9ab6-49fe11a22da5" class="">
+              Brackets is an open-source text editor that is highly customizable
+              and provides a vast array of features that make editing efficient.
+              It has a user-friendly interface and syntax highlighting for over
+              40 programming languages. Brackets is free and open-source
+              software. Brackets has a feature called Live Preview, which allows
+              you to see the changes you make to your code in real-time in a web
+              browser.
+            </p>
+            <p id="ebfab200-955c-4c7e-b221-9bd3b1ee1506" class="">
+              For more information visit their
+              <a href="https://brackets.io/">website</a>.
+            </p>
+            <figure id="7ee1d183-76ab-4f79-98f3-f53552b12eb6" class="image">
+              <a href="https://brackets.io/img/hero.png"
+                ><img src="https://brackets.io/img/hero.png"
+              /></a>
+              <figcaption>Bracket Screenshot</figcaption>
+            </figure>
+            <p id="00b5f648-2834-4a72-8639-dbda0d6e8ea2" class="">
+              <strong>Installing Bracket</strong>
+            </p>
+            <ul id="213a9a90-0dd6-46f0-96d1-9c99edda554b" class="bulleted-list">
+              <li style="list-style-type: disc">Using apt</li>
+            </ul>
+            <pre
+              id="371f41c1-0581-4765-985c-ab7ccdd23c43"
+              class="code code-wrap"
+            ><code>sudo apt install brackets</code></pre>
+            <h2 id="67a71872-093b-40bb-9eff-072016077d62" class="">
+              Conclusion
+            </h2>
+            <p id="fb844f9a-531e-4155-bac3-4afde51664ea" class="">
+              In conclusion, choosing the right text editor is crucial for a
+              developer&#x27;s productivity. The text editors listed above are
+              among the best Linux text editors available, and each has its
+              unique features and capabilities. Whether you prefer a
+              command-line editor or a GUI-based editor, there is a text editor
+              on this list that will meet your needs. We hope this blog post has
+              helped you find the perfect Linux text editor for your coding
+              needs. Remember, always choose a text editor that matches your
+              needs and preferences, and most importantly, one that makes coding
+              a fun and enjoyable experience.
+            </p>
+            <p id="12290461-22b6-45d3-ac05-56eb30684a08" class=""></p>
+          </div>
+        </article>
+        <div>
+          <div id="disqus_thread"></div>
+          <script>
+            /**
+             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+
+            var disqus_config = function () {
+              this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+              this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+
+            (function () {
+              // DON'T EDIT BELOW THIS LINE
+              var d = document,
+                s = d.createElement("script");
+              s.src = "https://shvgit.disqus.com/embed.js";
+              s.setAttribute("data-timestamp", +new Date());
+              (d.head || d.body).appendChild(s);
+            })();
+          </script>
+          <noscript
+            >Please enable JavaScript to view the
+            <a href="https://disqus.com/?ref_noscript"
+              >comments powered by Disqus.</a
+            ></noscript
+          >
         </div>
-      </article>
-      <div>
-        <div id="disqus_thread"></div>
-        <script>
-          /**
-           *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-           *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-
-          var disqus_config = function () {
-            this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
-            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-          };
-
-          (function () {
-            // DON'T EDIT BELOW THIS LINE
-            var d = document,
-              s = d.createElement("script");
-            s.src = "https://shvgit.disqus.com/embed.js";
-            s.setAttribute("data-timestamp", +new Date());
-            (d.head || d.body).appendChild(s);
-          })();
-        </script>
-        <noscript
-          >Please enable JavaScript to view the
-          <a href="https://disqus.com/?ref_noscript"
-            >comments powered by Disqus.</a
-          ></noscript
-        >
+      </div>
+      <div class="recommedation container">
+        <div>
+          <h2>You Might also like</h2>
+        </div>
       </div>
     </div>
-
     <div class="container-fluid background-peach">
       <footer
         class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"

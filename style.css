@@ -10,124 +10,144 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 */
 
-
 html {
   scroll-behavior: smooth;
   height: 100%;
 }
 
-p{
+p {
   font-weight: fw-normal;
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+  /* Code for Firefox */
   color: #454176;
-  background:#EEF4ED;
+  background: #eef4ed;
 }
 
 ::selection {
   color: #454176;
-  background:#EEF4ED;
+  background: #eef4ed;
 }
 
-.bg-image{
-    background-image: url("/assets/palmtrees.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 50% 90%;
-    width: 100%;
-    font-family: 'Montserrat', sans-serif;
+.bg-image {
+  background-image: url("/assets/palmtrees.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 90%;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
 }
 
 .hero1 {
   z-index: 0;
-	background: linear-gradient(45deg, rgba(195, 175, 255, 0.2), rgba(100,216,243,0.2), rgba(236, 222, 198, 0.2), rgba(146, 245, 214, 0.2), rgba(149, 52, 219, 0.3)) 0 0 / 1000% no-repeat, url("/assets/palmtrees.jpg") 0 0 / cover no-repeat;
-	-webkit-animation: gradientAnimation 40s ease infinite;
-	animation: gradientAnimation 40s ease infinite;
+  background: linear-gradient(
+        45deg,
+        rgba(195, 175, 255, 0.2),
+        rgba(100, 216, 243, 0.2),
+        rgba(236, 222, 198, 0.2),
+        rgba(146, 245, 214, 0.2),
+        rgba(149, 52, 219, 0.3)
+      )
+      0 0 / 1000% no-repeat,
+    url("/assets/palmtrees.jpg") 0 0 / cover no-repeat;
+  -webkit-animation: gradientAnimation 40s ease infinite;
+  animation: gradientAnimation 40s ease infinite;
 }
 @-webkit-keyframes gradientAnimation {
-	0%   { background-position: 0% 30%, 0 0;}
-	50%  { background-position: 100% 70%, 0 0;}
-	100% { background-position: 0% 30%, 0 0;}
+  0% {
+    background-position: 0% 30%, 0 0;
+  }
+  50% {
+    background-position: 100% 70%, 0 0;
+  }
+  100% {
+    background-position: 0% 30%, 0 0;
+  }
 }
 @keyframes gradientAnimation {
-	0%   { background-position: 0% 30%, 0 0;}
-	50%  { background-position: 100% 70%, 0 0;}
-	100% { background-position: 0% 30%, 0 0;}
+  0% {
+    background-position: 0% 30%, 0 0;
+  }
+  50% {
+    background-position: 100% 70%, 0 0;
+  }
+  100% {
+    background-position: 0% 30%, 0 0;
+  }
 }
 
-.navbar-bg{
-    background-color: #d4ffff5c;
-    backdrop-filter: blur(5px);
+.navbar-bg {
+  background-color: #d4ffff5c;
+  backdrop-filter: blur(5px);
 }
 
-.dropdown-menu{
-    background-color: #d4ffff75;
+.dropdown-menu {
+  background-color: #d4ffff75;
 }
 
-.nav-link:hover{
-    font-weight: 500;
-    text-decoration-line: underline;
-    background-color:rgba(137, 43, 226, 0.09) ;
-    border-radius: 19%;
+.nav-link:hover {
+  font-weight: 500;
+  text-decoration-line: underline;
+  background-color: rgba(137, 43, 226, 0.09);
+  border-radius: 19%;
 }
 
 .shadow1 {
-    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.448);
-  }
+  box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.448);
+}
 
 .hero1 h1 {
-    text-align: left;
-    pointer-events: none;
-    font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(45deg, #f32170,#ff6b08, #cf23cf, #eedd44);
-    -webkit-animation: gradientAnimation 40s ease infinite;
-  	animation: gradientAnimation 40s ease infinite;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-weight: 800;
-    font-size: 6vw;
-  }
+  text-align: left;
+  pointer-events: none;
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(45deg, #f32170, #ff6b08, #cf23cf, #eedd44);
+  -webkit-animation: gradientAnimation 40s ease infinite;
+  animation: gradientAnimation 40s ease infinite;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: 800;
+  font-size: 6vw;
+}
 
-  .hero1 p{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size:2vw;
-    color:white;
-    text-shadow:  rgba(0, 0, 0, 2);
-  }
+.hero1 p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 2vw;
+  color: white;
+  text-shadow: rgba(0, 0, 0, 2);
+}
 
-  .main-text {
-    position:absolute;
-    bottom:0;
-    padding: 5%;
-  }
-  .item1 {
-    transform: translateY(0%);
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    width: 90vw;
-    grid-column-gap: 1vw;
-  }
+.main-text {
+  position: absolute;
+  bottom: 0;
+  padding: 5%;
+}
+.item1 {
+  transform: translateY(0%);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90vw;
+  grid-column-gap: 1vw;
+}
 
-  .item1 h2{
-    text-align: center;
-    font-size: 8vh ;
-  }
+.item1 h2 {
+  text-align: center;
+  font-size: 8vh;
+}
 
-  .container-1{
-    width: 100%;
-    height: 85vh;
-    position: relative;
-  }
+.container-1 {
+  width: 100%;
+  height: 85vh;
+  position: relative;
+}
 
-  
-  .background-peach{
-    background-color: #d5dffd;
-  }
+.background-peach {
+  background-color: #d5dffd;
+}
 .background-black {
   background-color: rgb(38, 38, 38);
 }
@@ -152,12 +172,12 @@ p{
   padding: 5%;
 }
 
-.skills-text{
+.skills-text {
   padding: 2%;
-  font-size:large;
+  font-size: large;
 }
 
-.album-image{
+.album-image {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -169,62 +189,81 @@ p{
 .nav-emoji .nav-emoji-2 {
   opacity: 0;
   position: absolute;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 .nav-emoji:hover .nav-emoji-1 {
   opacity: 0;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 
 .nav-emoji:hover .nav-emoji-2 {
   opacity: 1;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 .nav-emoji-2,
 .nav-emoji-1 {
   position: absolute;
-    right: 18px;
-    top: 15px;
+  right: 18px;
+  top: 15px;
 }
 
-.bg-sus{
-background-color: #282A3A;
-opacity: 0.8;
-background: radial-gradient(circle, transparent 20%, #282A3A 20%, #282A3A 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #282A3A 20%, #282A3A 80%, transparent 80%, transparent) 22.5px 22.5px, linear-gradient(#3c3f57 1.8px, transparent 1.8px) 0 -0.9px, linear-gradient(90deg, #3c3f57 1.8px, #282A3A 1.8px) -0.9px 0;
-background-size: 45px 45px, 45px 45px, 22.5px 22.5px, 22.5px 22.5px;
+.bg-sus {
+  background-color: #282a3a;
+  opacity: 0.8;
+  background: radial-gradient(
+      circle,
+      transparent 20%,
+      #282a3a 20%,
+      #282a3a 80%,
+      transparent 80%,
+      transparent
+    ),
+    radial-gradient(
+        circle,
+        transparent 20%,
+        #282a3a 20%,
+        #282a3a 80%,
+        transparent 80%,
+        transparent
+      )
+      22.5px 22.5px,
+    linear-gradient(#3c3f57 1.8px, transparent 1.8px) 0 -0.9px,
+    linear-gradient(90deg, #3c3f57 1.8px, #282a3a 1.8px) -0.9px 0;
+  background-size: 45px 45px, 45px 45px, 22.5px 22.5px, 22.5px 22.5px;
 }
 
-.sus-text{
-color: #519872!important;
-font-weight: 600;
+.sus-text {
+  color: #519872 !important;
+  font-weight: 600;
 }
 
-.sus-text-p{
-  color:azure;
+.sus-text-p {
+  color: azure;
 }
 
 .bg-sus-2 {
   background-color: #d3d8f63c;
 }
 
-.sus-text-2{
+.sus-text-2 {
   color: #d3d8f6;
   text-align: center;
   padding: 2%;
 }
 
-.sus-text-2 h1{
+.sus-text-2 h1 {
   font-size: 3vw;
 }
 
-footer{
+footer {
   display: block;
   height: fit-content;
 }
 
 /* blog css*/
 
-.blog-container{
+.container-blog {
+  width: fit-content;
   padding: 2%;
 }
 
