@@ -108,16 +108,40 @@ p {
   -webkit-background-clip: text;
   background-clip: text;
   font-weight: 800;
-  font-size: 6vw;
+  font-size: 5em;
 }
 
 .hero1 p {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 2vw;
+  font-size: 2em;
   color: white;
   text-shadow: rgba(0, 0, 0, 2);
 }
+
+
+/* For tablets */
+@media only screen and (max-width: 768px) {
+  .hero1 h1 {
+    font-size: 5em;
+  }
+
+  .hero1 p {
+    font-size: 1.5em;
+  }
+}
+
+/* For phones 412 res */
+@media only screen and (max-width: 412px) {
+  .hero1 h1 {
+    font-size: 4em;
+  }
+
+  .hero1 p {
+    font-size: 1.5em;
+  }
+}
+
 
 .main-text {
   position: absolute;
