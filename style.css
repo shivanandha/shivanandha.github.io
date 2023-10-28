@@ -7,12 +7,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   font: inherit;
   vertical-align: baseline;
 }
-
 */
-
-body{
-  background-color: #d5dffd;
-}
 
 html {
   scroll-behavior: smooth;
@@ -84,15 +79,55 @@ p {
 .navbar-bg {
   box-shadow: 0 0 5px 0 ;
   background-color: #6341821d;
-  backdrop-filter: blur(10px); 
+  backdrop-filter: blur(10px);
+  background: linear-gradient(
+        45deg,
+        rgba(195, 175, 255, 0.2),
+        rgba(100, 216, 243, 0.2),
+        rgba(236, 222, 198, 0.2),
+        rgba(146, 245, 214, 0.2),
+        rgba(149, 52, 219, 0.3)
+      )
+      0 0 / 1000% no-repeat,
+    url("/") 0 0 / cover no-repeat;
+  -webkit-animation: gradientAnimation 30s ease infinite;
+  animation: gradientAnimation 30s ease infinite;
+}
+@-webkit-keyframes gradientAnimation {
+  0% {
+    background-position: 0% 30%, 0 0;
+  }
+  50% {
+    background-position: 100% 70%, 0 0;
+  }
+  100% {
+    background-position: 0% 30%, 0 0;
+  }
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 30%, 0 0;
+  }
+  50% {
+    background-position: 100% 70%, 0 0;
+  }
+  100% {
+    background-position: 0% 30%, 0 0;
+  }
 }
 
 .dropdown-menu {
   background-color: #d4ffff75;
 }
 
+.nav-link {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+}
+
 .nav-link:hover {
   font-weight: 500;
+  font-style: italic;
   text-decoration-line: underline;
   background-color: rgba(137, 43, 226, 0.09);
   border-radius: 19%;
@@ -103,10 +138,10 @@ p {
 }
 
 .hero1 h1 {
-  text-align: left;
+  text-align: center;
   pointer-events: none;
-  font-family: "Montserrat", sans-serif;
-  background: linear-gradient(45deg, #f32170, #ff6b08, #cf23cf, #eedd44);
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(90deg, #72F5B7, #8EECF5, #8EA0F5, #A013D8);
   -webkit-animation: gradientAnimation 40s ease infinite;
   animation: gradientAnimation 40s ease infinite;
   -webkit-text-fill-color: transparent;
@@ -114,14 +149,20 @@ p {
   background-clip: text;
   font-weight: 800;
   font-size: 5em;
+  text-shadow: rgba(0, 0, 0, 2);
+  background-color: #573c3c;
 }
 
 .hero1 p {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
   font-size: 2em;
   color: white;
   text-shadow: rgba(0, 0, 0, 2);
+}
+
+#text24 {
+  font-family: 'Poppins', sans-serif;
 }
 
 
@@ -150,6 +191,7 @@ p {
 
 .main-text {
   position: absolute;
+  transform: translateX(-50%) translateY(-50);
   bottom: 0;
   padding: 5%;
 }
@@ -175,7 +217,7 @@ p {
 }
 
 .background-peach {
-  background-color: #d5dffd;
+  background-color: #fcf2d9;
 }
 .background-black {
   background-color: rgb(38, 38, 38);
@@ -312,7 +354,7 @@ footer {
     / auto 1fr;
   gap: 8px;
 
-  padding: auto;
+  padding: 1em;
   margin: 1.5em;
 }
 
