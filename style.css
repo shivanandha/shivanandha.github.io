@@ -164,8 +164,7 @@ p {
   font-family: 'Poppins', sans-serif;
 }
 
-
-/* For tablets */
+/* for tablets*/
 @media only screen and (max-width: 768px) {
   .hero1 h1 {
     font-size: 5em;
@@ -176,10 +175,11 @@ p {
   }
 }
 
+
 /* For phones 412 res */
 @media only screen and (max-width: 412px) {
   .hero1 h1 {
-    font-size: 4em;
+    font-size: 3em;
   }
 
   .hero1 p {
@@ -187,6 +187,15 @@ p {
   }
 }
 
+@media only screen and (max-width: 320px){
+  .hero1 h1 {
+    font-size: 0.6em;
+  }
+
+  .hero1 p {
+    font-size: 0.1em;
+  }
+}
 
 .main-text {
   position: absolute;
@@ -216,7 +225,7 @@ p {
 }
 
 .background-peach {
-  background-color: #fcf2d9;
+  background-color: #fff9eb;
 }
 .background-black {
   background-color: rgb(38, 38, 38);
