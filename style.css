@@ -385,6 +385,14 @@ footer {
   padding: 2%;
 }
 
+/* For phones 412 res */
+@media only screen and (max-width: 412px) {
+  .disqus_container{
+    padding: 0.4%;
+  }
+}
+
+
 #disqus_thread {
   padding: 0 15dvh 0 15dvh;
   margin-top: 40px;
