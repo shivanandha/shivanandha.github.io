@@ -21,12 +21,12 @@ p {
 ::-moz-selection {
   /* Code for Firefox */
   color: #454176;
-  background: #d0ede4;
+  background: #afcdda;
 }
 
 ::selection {
   color: #e7860f;
-  background: #FFFAE6;
+  background: #afcdda;
 }
 
 .bg-image {
@@ -377,3 +377,54 @@ footer {
   display: flex;
   flex-direction: column;
 }
+
+
+/* disqus css*/
+
+#disqus_thread {
+  padding: 0 15dvh 0 15dvh;
+  margin-top: 40px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .content {
+      padding: 10px;
+  }
+
+  #disqus_thread {
+      margin-top: 20px;
+  }
+}
+
+/* code block css*/
+.code-snippet tr{
+  border: solid#282a3a;
+}
+
+.code-snippet code{
+  font-weight: bolder;
+  text-align: center;
+}
+
+
+  .code-snippet {
+    margin: 0 auto; /* Center the table itself */
+    border-collapse: collapse;
+    
+  }
+  
+  .code-snippet table, 
+  .code-snippet th, 
+  .code-snippet td {
+  
+    padding: 5px;
+    text-align: center; /* Center content horizontally */
+    vertical-align: middle; /* Center text vertically */
+  }
+  
+  .code-snippet pre {
+    display: inline-block; /* Allow centering within the table cell */
+    margin: 5px; /* Remove default margins */
+    padding: 10px; /* Remove default padding */
+  }

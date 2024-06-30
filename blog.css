@@ -119,3 +119,7 @@
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
   }
+
+  .navbar{
+    --bs-navbar-padding-y: 0rem;
+  }

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1Q05C2EJGY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-1Q05C2EJGY");
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="p09-PbwruEKjkseyoHanxolXOsebtDcOWJDPl1B4XuE" />
+    <meta name="author" content="Shivanandha" />
+    <meta name="description"
+        content="A personal blog of ShivaNandha with cybersecurity writeups on TryHackMe, HackTheBox and other cybersecurity related topics." />
+    <meta name="keywords"
+        content="Tryhackme, tryhackme, HackTheBox, hackthebox, writeups, cybersecurity, shivanandha, ShivaNandha, RedTeam, Windows, Linux, wazuh, wazuh installation, wazuh OVA, wazuh in Windows, BlueTeam, SIEM, wazuh opensource, opensource siem, uninstalling wazuh agent, removing wazuh agent, wazuh agent" />
+    <!--
+            <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/styles.css">
+        -->
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;0,800;1,500;1,800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+    </style>
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+        data-id="rudolfe" data-description="Support me on Buy me a coffee!" data-message="" data-color="#D1C4E9"
+        data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+    <title>welcome</title>
+</head>
+
+<body class="background-peach">
+    <nav class="navbar navbar-expand-lg navbar-bg sticky-top shadow" aria-label="none">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11"
+                aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+                <a class="navbar-brand col-lg-3 me-0" href="#">Rudolf</a>
+                <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog.html">Social's</a>
+                    </li>
+                    <!--
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Social's</a
+              >
+              <ul
+                class="dropdown-menu"
+                style="background-color: rgba(212, 255, 255, 0.458)"
+              >
+                <li><a class="dropdown-item" href="#">YouTube</a></li>
+                <li><a class="dropdown-item" href="#">Instagram</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            -->
+                </ul>
+                <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+                    <a href="sus.html">
+                        <div class="nav-emoji">
+                            <span class="nav-emoji-1">(～￣▽￣)～</span>
+                            <span class="nav-emoji-2">～(￣▽￣～)</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="content py-5 text-center">
+        <div class="row py-lg">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-normal">Installing Wazuh OVA in VM</h1>
+                <p class="lead fw-normal text-muted">
+                    --
+                </p>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="container">
+        <main class="content">
+            <article>
+                <section id="Introduction">
+                    <h3>Introduction</h3>
+                    <p>Wazuh is an open-source security monitoring solution that provides comprehensive security
+                        analytics and monitoring for endpoints and cloud workloads. Using a pre-configured Open Virtual
+                        Appliance (OVA) file simplifies the deployment process, allowing you to get up and running
+                        quickly. This guide will walk you through the process of installing the Wazuh OVA on a virtual
+                        machine (VM) using VMware Workstation and Oracle VirtualBox.</p>
+                </section>
+                <section id="Prerequisites">
+                    <h3>Prerequisites</h3>
+                    <p>
+                    <ol>
+                        <li><strong>
+                                Virtualization Software:
+                            </strong> Ensure you have virtualization software installed on your system. </li>
+                        <li><strong>OVA File: </strong> Download the latest Wazuh OVA file from the Wazuh official
+                            <a href="https://wazuh.com/">website.</a>
+                        </li>
+                        <li><strong>System Resources: </strong>Verify that your system meets the resource
+                            requirements for running Wazuh, including sufficient CPU, RAM, and disk space.</li>
+                    </ol>
+                    </p>
+                </section>
+                <section id="Steps">
+                    <h3>Steps</h3>
+                    <section id="Step-1">
+                        <p>
+                        <h5>Step 1: Download and Verify the OVA File</h5>
+                        <ol>
+                            <li>Go to the Wazuh <a
+                                    href="https://documentation.wazuh.com/current/deployment-options/virtual-machine/virtual-machine.html#packages-list">Documentation
+                                    Page</a> and download the OVA file.</li>
+                            <li>Verify the integrity of the downloaded file using the provided checksum to ensure it
+                                hasn’t been corrupted during the download.</li>
+                        </ol>
+                        </p>
+                        <div class="code-snippet">
+                            <table style="width: 100%;">
+                                <tr>
+                                    <th>Powershell</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <pre><code>Get-FileHash -Path &lt;file_path&gt; -Algorithm SHA256</code></pre>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </section>
+                    <section id="Step-2">
+                        <h5>Step 2: Install Wazuh OVA in VMware Workstation</h5>
+                        <p>
+                        <ol>
+                            <li>
+                                Open VMware Workstation: Launch VMware Workstation on your computer.
+                            </li>
+                            <li>
+                                Import OVA File:
+                                <ul>
+                                    <li>
+                                        Click on File &gt; Open....
+                                    </li>
+                                    <li>Navigate to the downloaded Wazuh OVA file and select it.</li>
+                                    <li>
+                                        Click Open to start the import process.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Configure Virtual Machine
+                                <ul>
+                                    <li>Assign a name to your VM.</li>
+                                    <li>Choose the location where you want to store the VM files.</li>
+                                    <li>Adjust the resources (CPU, RAM, disk space) based on your system's capabilities
+                                        and Wazuh's requirements.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Finish and Power On:
+                                <ul>
+                                    <li>Click Finish to complete the import.</li>
+                                    <li>Select the newly created VM and click Power on this virtual machine.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Network Configuration:
+                                <ul>
+                                    <li>Configure the network settings as required. Bridged networking allows the VM to
+                                        connect to the network using the host machine’s network interface.</li>
+                                </ul>
+                            </li>
+                            <li>Access Wazuh:
+                                <ul>
+                                    <li>
+                                        Once the VM is running, you can access the Wazuh web interface using the VM's IP
+                                        address. Open a web browser and enter https://&lt;VM_IP_ADDRESS&gt;.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                        </p>
+                    </section>
+                </section>
+                <section id="Post-Installation">
+                    <h3>Post-Installation Steps</h3>
+                    <p>
+                    <ol>
+                        <li>
+                            Login Credentials:
+                            <ul>
+                                <li>The default credentials are usually provided in the Wazuh documentation or during
+                                    the first login setup. Make sure to change the default password immediately.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            System Updates:
+                            <ul>
+                                <li>
+                                    Ensure that the Wazuh instance is up to date by running the latest updates.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Configuration:
+                            <ul>
+                                <li>
+                                    Customize the Wazuh settings based on your specific monitoring requirements. Refer
+                                    to the Wazuh documentation for detailed guidance on configuration and management.
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                    </p>
+                </section>
+                <section id="Conclusion">
+                    <h3>Conclusion</h3>
+                    <p>
+                        Installing Wazuh using the OVA file on a virtual machine simplifies the deployment process,
+                        allowing you to quickly set up a powerful security monitoring tool. Whether you are using VMware
+                        Workstation or Oracle VirtualBox, the steps outlined in this guide should help you get started
+                        with Wazuh. Explore the Wazuh dashboard, configure your alerts, and start monitoring your
+                        environment effectively!
+                        <br><br>
+                        Feel free to leave any questions or feedback in the comments below.
+                    </p>
+                </section>
+            </article>
+        </main>
+
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#Introduction">Introduction</a></li>
+                    <li><a href="#Prerequisites">Prerequisites</a></li>
+                    <li><a href="#Steps">Steps</a>
+                        <ul>
+                            <li><a href="#Step-1">Step-1 Downloading</a></li>
+                            <li><a href="#Step-2">Step-2 Installing</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#Post-Installation">Post-Installation Steps</a></li>
+                    <li><a href="#Conclusion">Conclusion</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </div>
+    <br><br>
+    <hr>
+    <!--end of blog-->
+
+    <div class="disqus_container">
+        <!-- Disqus Comments Section -->
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                // Dynamically setting page URL and identifier
+                this.page.url = window.location.href;  // Use canonical URL if available
+                this.page.identifier = window.location.pathname;  // Unique identifier for the page
+            };
+            (function () {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://shvgit.disqus.com/embed.js';  // Replace YOUR_DISQUS_SHORTNAME
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>
+            Please enable JavaScript to view the
+            <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+        <noscript>Please enable JavaScript to view the
+            <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+
+    <!--footer-->
+    <footer class="content d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+        <p class="col-md-4 mb-0 text-muted">&copy; 2022 Company, Inc</p>
+
+        <a href="#"
+            class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#" />
+            </svg>
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item">
+                <a href="/index.html" class="nav-link px-2 text-muted">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="/blog.html" class="nav-link px-2 text-muted">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-muted">Pricing</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-muted">FAQs</a>
+            </li>
+            <li class="nav-item">
+                <a href="/about.html" class="nav-link px-2 text-muted">About</a>
+            </li>
+        </ul>
+    </footer>
+    <!--end of footer-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

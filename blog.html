@@ -1,100 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-1Q05C2EJGY"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "G-1Q05C2EJGY");
-    </script>
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1Q05C2EJGY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="google-site-verification"
-      content="p09-PbwruEKjkseyoHanxolXOsebtDcOWJDPl1B4XuE"
-    />
-    <meta name="author" content="Shivanandha" />
-    <meta
-      name="description"
-      content="A personal blog of ShivaNandha with cybersecurity writeups on TryHackMe, HackTheBox and other cybersecurity related topics."
-    />
-    <meta
-      name="keywords"
-      content="Tryhackme, tryhackme, HackTheBox, hackthebox, writeups, cybersecurity, shivanandha, ShivaNandha, RedTeam, Windows, Linux"
-    />
-    <link rel="stylesheet" href="/style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;0,800;1,500;1,800&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      data-name="BMC-Widget"
-      data-cfasync="false"
-      src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
-      data-id="rudolfe"
-      data-description="Support me on Buy me a coffee!"
-      data-message=""
-      data-color="#D1C4E9"
-      data-position="Right"
-      data-x_margin="18"
-      data-y_margin="18"
-    ></script>
-    <title>Blog</title>
-  </head>
+    gtag("config", "G-1Q05C2EJGY");
+  </script>
 
-  <body class="background-peach">
-    <!--nav-->
-    <nav
-      class="navbar navbar-expand-lg navbar-bg sticky-top shadow"
-      aria-label="none"
-    >
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarsExample11"
-          aria-controls="navbarsExample11"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="p09-PbwruEKjkseyoHanxolXOsebtDcOWJDPl1B4XuE" />
+  <meta name="author" content="Shivanandha" />
+  <meta name="description"
+    content="A personal blog of ShivaNandha with cybersecurity writeups on TryHackMe, HackTheBox and other cybersecurity related topics." />
+  <meta name="keywords"
+    content="Tryhackme, tryhackme, HackTheBox, hackthebox, writeups, cybersecurity, shivanandha, ShivaNandha, RedTeam, Windows, Linux" />
+  <link rel="stylesheet" href="/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;0,800;1,500;1,800&display=swap"
+    rel="stylesheet" />
+  <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+    data-id="rudolfe" data-description="Support me on Buy me a coffee!" data-message="" data-color="#D1C4E9"
+    data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+  <title>Blog</title>
+</head>
 
-        <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
-          <a class="navbar-brand col-lg-3 me-0" href="#">Rudolf</a>
-          <ul class="navbar-nav col-lg-6 justify-content-lg-center">
-            <li class="nav-item">
-              <a class="nav-link" href="/index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Social's</a>
-            </li>
-            <!--
+<body class="background-peach">
+  <!--nav-->
+  <nav class="navbar navbar-expand-lg navbar-bg sticky-top shadow" aria-label="none">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11"
+        aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+        <a class="navbar-brand col-lg-3 me-0" href="#">Rudolf</a>
+        <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Social's</a>
+          </li>
+          <!--
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -115,220 +82,224 @@
               </ul>
             </li>
             -->
-          </ul>
-          <div class="d-lg-flex col-lg-3 justify-content-lg-end">
-            <a href="/sus.html" class="nav-link">(～￣▽￣)～</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!--end of nav-->
-
-    <!--blog-->
-    <div>
-      <section class="py-5 text-center container">
-          <div class="row py-lg-5">
-            <div class="col-lg-6 col-md-8 mx-auto">
-              <h1 class="fw-normal">Write up's</h1>
-              <p class="lead fw-normal text-muted">
-                These are few of my write up's. Read and find your fill.
-              </p>
-            </div>
-          </div>
-      </section>
-      <div>
-        <div class="layout">
-          <div class="container">
-            <div class="sidebar d-none d-sm-none d-md-block">
-              <div class="card">
-                <div class="card" style="width: 18rem;">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
-                    <li class="list-group-item">A third item</li>
-                    <li class="list-group-item">A third item</li>
-                    <li class="list-group-item">A third item</li>
-                    <li class="list-group-item">A third item</li> 
-                  </ul>
-                </div>
-              </div>
-              <br>
-              <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class=" matter container">
-            <div class="card mb-3" style="max-width: 75vw; align-items: center">
-              <div class="row g-0">
-                <div class="col-md">
-                  <img
-                    src="https://images.unsplash.com/photo-1529465230221-a0d10e46fcbb?ixlib=rb-4.0.3&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb"
-                    class="img-fluid rounded-start"
-                    alt="..."
-                  />
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Top 10 Best Linux Text Editor's</h5>
-                    <p class="card-text">
-                      As a Linux user, you know how important it is to find the
-                      right text editor. It can be a daunting task.&nbsp;<span class="d-none d-sm-none d-md-none d-lg-block">Text editors are
-                        a critical tool for developers and programmers, and choosing
-                        the wrong one can make coding a frustrating experience. But
-                        don't worry, we're here to help. In this blog post, we will
-                        explore the top 10 best Linux text editors that provide an
-                        excellent user experience and are highly customizable to match
-                        your needs.</span>
-                    </p>
-    
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <a
-                          href="/blog posts/Top 10 Best Linux Text Editors.html"
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          View
-                        </a>
-                      </div>
-                      <small class="text-muted">6 mins</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3" style="max-width: 75vw; align-items: center">
-              <div class="row g-0">
-                <div class="col-md">
-                    <img
-                    src="/assets/rick-n-morty.jpg"
-                    class="img-fluid rounded-start"
-                    alt="Rick and Morty image"
-                  />
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Pickle Rick - TryHackMe Room</h5>
-                    <p class="card-text">
-                        A Rick and Morty
-                        CTF. Help turn Rick back into a human!
-                        <span class="d-none d-sm-none d-md-none d-lg-block">
-                        This Rick and Morty
-                        themed challenge requires you to exploit a webserver to help
-                        Rick make his potion to transform himself back into a human
-                        from a pickle.
-                        </span>
-                    </p>
-    
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <a
-                          href="https://rudolfevergarden.gitbook.io/writeups/v/tryhackme-writeups/tryhackme-writeups/pickle-rick-room-tryhackme"
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          View
-                        </a>
-                      </div>
-                      <small class="text-muted">6 mins</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3" style="max-width: 75vw; align-items: center">
-              <div class="row g-0">
-                <div class="col-md">
-                  <img
-                    src="https://images4.alphacoders.com/691/69186.jpg"
-                    class="img-fluid rounded-start"
-                    alt="windows wallpaper"
-                  />
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Blue - TryHackMe Room</h5>
-                    <p class="card-text">
-                      Deploy & hack into a
-                        Windows machine, leveraging common misconfigurations issues.
-                        <br />
-                        And learn about eternal blue exploit.
-                    </p>
-    
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <a
-                          href="https://rudolfevergarden.gitbook.io/writeups/v/blue-tryhackme-room"
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          View
-                        </a>
-                      </div>
-                      <small class="text-muted">6 mins</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-  
+        </ul>
+        <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+          <a href="/sus.html" class="nav-link">(～￣▽￣)～</a>
         </div>
       </div>
     </div>
+  </nav>
+  <!--end of nav-->
 
-    <!--end of blog-->
+  <!--blog-->
+  <div>
+    <section class="py-5 text-center container-fluid">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-normal">Write up's</h1>
+          <p class="lead fw-normal text-muted">
+            These are few of my write up's. Read and find your fill.
+          </p>
+        </div>
+      </div>
+    </section>
+    <div>
+      <div class="layout">
+        <div class="container">
+          <div class="sidebar d-none d-sm-none d-md-block">
+            <div class="card">
+              <div class="card" style="width: 18rem;">
+                <h5 class="card-title card-body text-center">Card title</h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">An item</li>
+                  <li class="list-group-item">A second item</li>
+                  <li class="list-group-item">A third item</li>
+                  <li class="list-group-item">A third item</li>
+                  <li class="list-group-item">A third item</li>
+                  <li class="list-group-item">A third item</li>
+                  <li class="list-group-item">A third item</li>
+                </ul>
+              </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-                <!--footer-->
-                <div class="container-fluid background-1">
-                  <footer
-                    class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
-                  >
-                    <p class="col-md-4 mb-0 text-muted">&copy; 2022 Company, Inc</p>
-          
-                    <a
-                      href="/"
-                      class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
-                    >
-                      <svg class="bi me-2" width="40" height="32">
-                        <use xlink:href="#bootstrap" />
-                      </svg>
-                    </a>
-          
-                    <ul class="nav col-md-4 justify-content-end">
-                      <li class="nav-item">
-                        <a href="#" class="nav-link px-2 text-muted">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="#" class="nav-link px-2 text-muted">Features</a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="#" class="nav-link px-2 text-muted">Pricing</a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="#" class="nav-link px-2 text-muted">FAQs</a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="#" class="nav-link px-2 text-muted">About</a>
-                      </li>
-                    </ul>
-                  </footer>
+        <div class=" matter container">
+          <div class="card mb-3" style="max-width: 75vw; align-items: center">
+            <div class="row g-0">
+              <div class="col-md">
+                <img
+                  src="https://images.unsplash.com/photo-1529465230221-a0d10e46fcbb?ixlib=rb-4.0.3&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb"
+                  class="img-fluid rounded-start" alt="..." />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Top 10 Best Linux Text Editor's</h5>
+                  <p class="card-text">
+                    As a Linux user, you know how important it is to find the
+                    right text editor. It can be a daunting task.&nbsp;<span
+                      class="d-none d-sm-none d-md-none d-lg-block">Text editors are
+                      a critical tool for developers and programmers, and choosing
+                      the wrong one can make coding a frustrating experience. But
+                      don't worry, we're here to help. In this blog post, we will
+                      explore the top 10 best Linux text editors that provide an
+                      excellent user experience and are highly customizable to match
+                      your needs.</span>
+                  </p>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="/blog posts/Top 10 Best Linux Text Editors.html" type="button"
+                        class="btn btn-sm btn-outline-secondary">
+                        View
+                      </a>
+                    </div>
+                    <small class="text-muted">6 mins</small>
+                  </div>
                 </div>
-                <!--end of footer-->
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 75vw; align-items: center">
+            <div class="row g-0">
+              <div class="col-md">
+                <img src="/assets/rick-n-morty.jpg" class="img-fluid rounded-start" alt="Rick and Morty image" />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Pickle Rick - TryHackMe Room</h5>
+                  <p class="card-text">
+                    A Rick and Morty
+                    CTF. Help turn Rick back into a human!
+                    <span class="d-none d-sm-none d-md-none d-lg-block">
+                      This Rick and Morty
+                      themed challenge requires you to exploit a webserver to help
+                      Rick make his potion to transform himself back into a human
+                      from a pickle.
+                    </span>
+                  </p>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://rudolfevergarden.gitbook.io/writeups/v/tryhackme-writeups/tryhackme-writeups/pickle-rick-room-tryhackme"
+                        type="button" class="btn btn-sm btn-outline-secondary">
+                        View
+                      </a>
+                    </div>
+                    <small class="text-muted">6 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 75vw; align-items: center">
+            <div class="row g-0">
+              <div class="col-md">
+                <img src="https://images4.alphacoders.com/691/69186.jpg" class="img-fluid rounded-start"
+                  alt="windows wallpaper" />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Blue - TryHackMe Room</h5>
+                  <p class="card-text">
+                    Deploy & hack into a
+                    Windows machine, leveraging common misconfigurations issues.
+                    <br />
+                    And learn about eternal blue exploit.
+                  </p>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://rudolfevergarden.gitbook.io/writeups/v/blue-tryhackme-room" type="button"
+                        class="btn btn-sm btn-outline-secondary">
+                        View
+                      </a>
+                    </div>
+                    <small class="text-muted">6 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 75vw; align-items: center">
+            <div class="row g-0">
+              <div class="col-md">
+                <img src="https://images4.alphacoders.com/691/69186.jpg" class="img-fluid rounded-start"
+                  alt="windows wallpaper" />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Installing Wazuh OVA in a virtual machine</h5>
+                  <p class="card-text">
+                    Wazuh is a free and open-source security platform that unifies XDR and SIEM capabilities. In this video we'll see how to install wazuh OVA in virtual machine.
+                  </p>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="/blog posts/installin_wazuh_in_vm.html" type="button"
+                        class="btn btn-sm btn-outline-secondary">
+                        View
+                      </a>
+                    </div>
+                    <small class="text-muted">6 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--end of blog-->
+
+  <!--footer-->
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <p class="col-md-4 mb-0 text-muted">&copy; 2022 Company, Inc</p>
+
+    <a href="/"
+      class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+      <svg class="bi me-2" width="40" height="32">
+        <use xlink:href="#bootstrap" />
+      </svg>
+    </a>
+
+    <ul class="nav col-md-4 justify-content-end">
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-muted">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-muted">Features</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-muted">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-muted">FAQs</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-muted">About</a>
+      </li>
+    </ul>
+  </footer>
+  <!--end of footer-->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
