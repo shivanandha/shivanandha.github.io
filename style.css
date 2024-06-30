@@ -381,6 +381,10 @@ footer {
 
 /* disqus css*/
 
+.disqus-container{
+  padding: 2%;
+}
+
 #disqus_thread {
   padding: 0 15dvh 0 15dvh;
   margin-top: 40px;
