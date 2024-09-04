@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1Q05C2EJGY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-1Q05C2EJGY");
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="p09-PbwruEKjkseyoHanxolXOsebtDcOWJDPl1B4XuE" />
+    <meta name="author" content="Shivanandha" />
+    <meta name="description"
+        content="A personal blog of ShivaNandha with cybersecurity writeups on TryHackMe, HackTheBox and other cybersecurity related topics." />
+    <meta name="keywords"
+        content="Tryhackme, tryhackme, HackTheBox, hackthebox, writeups, cybersecurity, shivanandha, ShivaNandha, RedTeam, Windows, Linux, wazuh, wazuh installation, wazuh OVA, wazuh in Windows, BlueTeam, SIEM, wazuh opensource, opensource siem, uninstalling wazuh agent, removing wazuh agent, wazuh agent" />
+    <!--
+            <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/styles.css">
+        -->
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;0,800;1,500;1,800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+    </style>
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+        data-id="rudolfe" data-description="Support me on Buy me a coffee!" data-message="" data-color="#D1C4E9"
+        data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+    <title>Wireshark For Beginners</title>
+</head>
+
+<body class="background-peach">
+    <nav class="navbar navbar-expand-lg navbar-bg sticky-top shadow" aria-label="none">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11"
+                aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+                <a class="navbar-brand col-lg-3 me-0" href="#">Rudolf</a>
+                <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog.html">Social's</a>
+                    </li>
+                    <!--
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Social's</a
+              >
+              <ul
+                class="dropdown-menu"
+                style="background-color: rgba(212, 255, 255, 0.458)"
+              >
+                <li><a class="dropdown-item" href="#">YouTube</a></li>
+                <li><a class="dropdown-item" href="#">Instagram</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            -->
+                </ul>
+                <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+                    <a href="sus.html">
+                        <div class="nav-emoji">
+                            <span class="nav-emoji-1">(～￣▽￣)～</span>
+                            <span class="nav-emoji-2">～(￣▽￣～)</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="content py-5 text-center">
+        <div class="row py-lg">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-normal">Wireshark For Beginners</h1>
+                <p class="lead fw-normal text-muted">
+                    This Blog post is for absolute Beginners who want to learn about wireshark.
+                </p>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="container">
+        <main class="content">
+            <article>
+                <section id="Introduction">
+                    <h3>Introduction</h3>
+                    <p>Wireshark is one of the most powerful and widely-used network protocol analyzers. It allows you
+                        to capture and interactively browse the traffic running on a computer network. Whether you’re a
+                        network administrator, cybersecurity professional, or just someone interested in learning more
+                        about how networks operate, Wireshark is an invaluable tool.
+
+                        This blog will guide you through the basics of using Wireshark, helping you to get started with
+                        capturing and analyzing network traffic.</p>
+                </section>
+                <section id="Why Use Wireshark?">
+                    <h3>Why Use Wireshark?</h3>
+                    <p> Wireshark is indispensable for several reasons:
+                    <ul>
+                        <li><strong>Network Troubleshooting: </strong> Identify bottlenecks, diagnose slowdowns, and
+                            pinpoint causes of packet loss or high latency. </li>
+                        <li><strong>Security Analysis: </strong> Detect abnormal traffic patterns, potential intrusions,
+                            or data exfiltration attempsts. </li>
+                        <li><strong>Protocol Understanding: </strong> Dive deep into how different network protocols
+                            function, helping you understand the intricacies of network. </li>
+                        <li><strong>Learning Tool: </strong> Gain hands on experience by observing real time network
+                            traffic, making abatract networking concepts tangible. </li>
+
+                    </ul>
+                    </p>
+                </section>
+                <section id="Installing Wireshark">
+                    <h3>Installing Wireshark</h3>
+                    <section id="Windows">
+                        <p>
+                        <ul>
+                            <li>
+                                <strong>Windows:</strong> Download the installer from the <a
+                                    href="https://www.wireshark.org/">Wireshark website</a> and follow the setup wizard.
+                            </li>
+                            <li>
+                                <strong>mac OS:</strong> Install it via Homebew using
+                                <code>brew install wireshark</code> or download it directly.
+                            </li>
+                            <li>
+                                <strong>Linux:</strong> Use your distribitution's package manager, e.g.,
+                                <code>sudo apt-get install wireshark</code> for debian base systems.
+                            </li>
+                        </ul>
+                        </p>
+                    </section>
+                </section>
+                <section id="Understanding the interface">
+                    <h3>Understanding the interface</h3>
+                    <p>Upon launching wireshark, you are gretted with a somewhat intimidating interface. Here is a
+                        breakdown to get us comfirtable with:</p>
+                    <section id="menu">
+                        <p>
+                        <ul>
+                            <li>
+                                <strong>Menu Bar:</strong> Access file operations capture settings, and analysis tools.
+                            </li>
+                            <li>
+                                <strong>ToolBar:</strong> Quick access to start, stop, and manage capture session.
+                            </li>
+                            <li>
+                                <strong>Filter Bar:</strong> Enter filter express to search or filter through the
+                                captured data.
+                            </li>
+                            <li>
+                                <strong>Packet List Pane:</strong> Show all captured packets.
+                            </li>
+                            <li>
+                                <strong>Packet details Pane:</strong> Display a hierarchical breakdown of the selected
+                                packet.
+                            </li>
+                        </ul>
+                        </p>
+                    </section>
+                </section>
+                <section id="Capturing Traffic">
+                    <h3>Capturing Traffic</h3>
+                    <p>To start capturing traffic, follow these steps:</p>
+                    <ul>
+                        <li>
+                            <strong>Select an interface:</strong> Choose the netwok interface through which the traffic
+                            you want to capture is passing. This could be your Ethernet, wi-Fi, or even a loopback
+                            adapater.
+                        </li>
+                        <li>
+                            <strong>Start Capture:</strong> Click the shark fin icon or navigate to
+                            <code>Capture > Start</code> to start capturing the data.
+                        </li>
+                        <li>
+                            <strong>Stop Capture:</strong> Click the read square icon or go to
+                            <code>Capture > Stop</code> when you have captured enough data.
+                        </li>
+                    </ul>
+                </section>
+                <section id="Filtering Traffic">
+                    <h3>Filtering Traffic : Narrowing Down the Data</h3>
+                    <p>Wireshark's filtering capabilities are one of its most powerful features. Here are some common
+                        filters:</p>
+                    <ul>
+                        <li>
+                            <strong>Filter by ip address:</strong> <code>ip.addr == 192.168.1.1</code> o show all
+                            traffic to or from a specific IP address.
+                        </li>
+                        <li>
+                            <strong>Filter by Protocol:</strong> <code>http, tcp, udp, dns</code> to focus on specific
+                            protocols.
+                        </li>
+                        <li>
+                            <strong>Filter by Port:</strong> <code>tcp.port == 80</code> to filter traffic based on a
+                            specific port number.
+                        </li>
+                        <li>
+                            <strong>Exclude Traffic:</strong> <code>!ip.addr == 192.168.1.1</code> to exclude a specific
+                            IP address from the results.
+                        </li>
+                    </ul>
+                    <p>You can also combine filters for more refined searches. For example,
+                        <code>ip.addr == 192.168.1.1 && tcp.port == 443</code> show only the HTTPS traffic to or from a
+                        specific IP.
+                    </p>
+                </section>
+                <section id="Analyzing Captured Data">
+                    <h3>Analyzing Captured Data</h3>
+                    <p>Once you have captured and filtered the traffic, you can start analyzing the packet in details:
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Follow a TCP Stream:</strong> To see the entire conversation between a client and a
+                            server, right-click on a TCP packet and select follow > TCP Stream. This feature is
+                            particularly useful for understandign how data flows in a connection.
+                        </li>
+                        <li>
+                            <strong>Inspect Packet Details:</strong> By clicking on any packet in the Packet List Pane,
+                            you can expand different layers (ethernet, IP, TCP, etc.) in the PacketDetails Pane to see
+                            headers and data paylods.
+                        </li>
+                        <li>
+                            <strong>Export Data:</strong> Save the captured traffic as a .pcap file for future analysis
+                            or for sharing the file with collegues.
+                        </li>
+                    </ul>
+                </section>
+                <section id="Advanced Features">
+                    <h3>Advanced Features</h3>
+                    <p>Once you're comfortable with the basics, you can explore some of Wireshark's advanced features:
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Custom Filters:</strong> Create custom display filters that fit your specific
+                            analysis needs.
+                        </li>
+                        <li>
+                            <strong>Color Coding:</strong> Use color rules to visually distinguish different types of
+                            traffic, making it easier to spot anomalies.
+                        </li>
+                        <li>
+                            <strong>Expert Information:</strong> Wireshark's Expert Information tool flags potential
+                            issues like malformed packets or protocol violations, giving you a heads-up on what might be
+                            wrong.
+                        </li>
+                        <li>
+                            <strong>Statistics and Graphs:</strong> Utilize built-in tools to generate traffic graphs,
+                            protocol hierarchies, and conversations. This data visualization can help you understand
+                            network behavior over time.
+                        </li>
+                    </ul>
+                </section>
+                <section id="Conclusion">
+                    <h3>Conclusion</h3>
+                    <p>
+                        Wireshark is a powerful tool that offers both depth and flexibility in network analysis. By
+                        starting with simple captures and gradually exploring more complex scenarios, you can unlock its
+                        full potential. Whether you're troubleshooting a slow network, securing your infrastructure, or
+                        simply learning more about how networks operate, Wireshark will be your go-to tool.
+
+                        As you continue to practice and explore its features, you'll gain the skills needed to tackle
+                        even the most complex networking challenges. Happy capturing!
+                        <br><br>
+                        Feel free to leave any questions or feedback in the comments below.
+                    </p>
+                </section>
+            </article>
+        </main>
+
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#Introduction">Introduction</a></li>
+                    <li><a href="#Why Use Wireshark?">Why Use Wireshark?</a></li>
+                    <li><a href="#Installing Wireshark">Installing Wireshark</a></li>
+                    <li><a href="#Understanding the interface">Understanding the interface</a></li>
+                    <li><a href="#Capturing Traffic">Capturing Traffic</a></li>
+                    <li><a href="Filtering Traffic">Filtering Traffic</a></li>
+                    <li><a href="#Analyzing Captured Data">Analyzing Captured Data</a></li>
+                    <li><a href="#Advanced Features">Advanced Features</a></li>
+                    <li><a href="#Conclusion">Conclusion</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </div>
+    <br><br>
+    <hr>
+    <!--end of blog-->
+
+    <div class="disqus_container">
+        <!-- Disqus Comments Section -->
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                // Dynamically setting page URL and identifier
+                this.page.url = window.location.href;  // Use canonical URL if available
+                this.page.identifier = window.location.pathname;  // Unique identifier for the page
+            };
+            (function () {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://shvgit.disqus.com/embed.js';  // Replace YOUR_DISQUS_SHORTNAME
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>
+            Please enable JavaScript to view the
+            <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+        <noscript>Please enable JavaScript to view the
+            <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+
+    <!--footer-->
+    <footer class="content d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+        <p class="col-md-4 mb-0 text-muted">&copy; 2022 Company, Inc</p>
+
+        <a href="#"
+            class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#" />
+            </svg>
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item">
+                <a href="/index.html" class="nav-link px-2 text-muted">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="/blog.html" class="nav-link px-2 text-muted">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-muted">Pricing</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-muted">FAQs</a>
+            </li>
+            <li class="nav-item">
+                <a href="/about.html" class="nav-link px-2 text-muted">About</a>
+            </li>
+        </ul>
+    </footer>
+    <!--end of footer-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -232,27 +232,27 @@
       color: rgba(55, 53, 47, 0.6);
     }
 
-    ol,
-    ul {
+    ol:not(.navbar-nav),
+    ul:not(.navbar-nav) {
       margin: 0;
       margin-block-start: 0.6em;
       margin-block-end: 0.6em;
     }
 
-    li>ol:first-child,
-    li>ul:first-child {
+    li>ol:not(.navbar-nav):first-child,
+    li>ul:not(.navbar-nav):first-child {
       margin-block-start: 0.6em;
     }
 
-    ul>li {
+    ul:not(.navbar-nav)>li {
       list-style: disc;
     }
 
-    ul.to-do-list {
+    ul:not(.navbar-nav).to-do-list {
       padding-inline-start: 0;
     }
 
-    ul.to-do-list>li {
+    ul:not(.navbar-nav).to-do-list>li {
       list-style: none;
     }
 
@@ -261,31 +261,31 @@
       opacity: 0.375;
     }
 
-    ul.toggle>li {
+    ul:not(.navbar-nav).toggle>li {
       list-style: none;
     }
 
-    ul {
+    ul:not(.navbar-nav) {
       padding-inline-start: 1.7em;
     }
 
-    ul>li {
+    ul:not(.navbar-nav)>li {
       padding-left: 0.1em;
     }
 
-    ol {
+    ol:not(.navbar-nav) {
       padding-inline-start: 1.6em;
     }
 
-    ol>li {
+    ol:not(.navbar-nav)>li {
       padding-left: 0.2em;
     }
 
-    .mono ol {
+    .mono ol:not(.navbar-nav) {
       padding-inline-start: 2em;
     }
 
-    .mono ol>li {
+    .mono ol:not(.navbar-nav)>li {
       text-indent: -0.4em;
     }
 
@@ -381,12 +381,16 @@
       text-align: center;
     }
 
+    /*
     .page-cover-image {
       display: block;
       object-fit: cover;
       width: 100%;
       max-height: 30vh;
     }
+*/
+
+
 
     .page-header-icon {
       font-size: 3rem;
@@ -878,6 +882,41 @@
       list-style: none;
     }
 
+    /* Apply custom padding to nav links, overriding Bootstrap's default */
+    nav.navbar .nav-link {
+      padding-top: 0.25rem !important;
+      /* Adjust these values to your preference */
+      padding-bottom: 0.25rem !important;
+    }
+
+
+
+    /* Image CSS */
+    .page-cover-image {
+      position: absolute;
+      /* Position the image absolutely within the container */
+      top: 8vh;
+      /* Start the image below the navbar */
+      left: 50%;
+      /* Center horizontally */
+      width: 100vw;
+      /* Full width of the viewport */
+      height: 20vh;
+      /* Set height to 60% of the viewport height */
+      object-fit: cover;
+      /* Ensure the image covers the area without distortion */
+      transform: translateX(-50%);
+      /* Center the image horizontally */
+      z-index: 0;
+      /* Ensure the image stays behind other content */
+      display: block;
+      /* Remove any default margins/paddings */
+    }
+
+    header {
+      padding: 5%;
+    }
+
     /*
       * { border: 1px solid black; }
 */
@@ -886,14 +925,14 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-bg sticky-top shadow" aria-label="none">
-    <div class="container">
+    <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11"
         aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
-        <a class="navbar-brand col-lg-3 me-0" href="#">Centered nav</a>
+        <a class="navbar-brand col-lg-3 me-0" href="#">Rudolf</a>
         <ul class="navbar-nav col-lg-6 justify-content-lg-center">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="/index.html">Home</a>
@@ -933,10 +972,11 @@
           <img class="page-cover-image"
             src="https://images.unsplash.com/photo-1529465230221-a0d10e46fcbb?ixlib=rb-4.0.3&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb"
             style="object-position: center 41.910000000000004%" />
-          <h1 class="sh1">Top 10 Best Linux Text Editors</h1>
+
           <p class="page-description"></p>
         </header>
         <div class="page-body">
+          <h1 class="sh1">Top 10 Best Linux Text Editors</h1>
           <p id="3627db67-6f4f-4014-a550-005174af372c" class=""></p>
           <h2 id="316fe1bd-6731-4bf6-b369-9cd62e59c8d2" class="">
             Introduction
@@ -989,7 +1029,8 @@
 <code>git clone &lt;https://github.com/vim/vim.git&gt;
 cd vim/src
 make
-</code></pre>
+</code>
+</pre>
           <ul id="2a0de5e1-511f-46c4-9e98-d008e2c06666" class="bulleted-list">
             <li style="list-style-type: disc">Using apt-get</li>
           </ul>
