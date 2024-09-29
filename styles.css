@@ -537,3 +537,15 @@ aside {
       z-index: 1000;
   }
 }
+
+
+/* card hover animation*/
+
+.card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  /* Adjust the value as needed */
+}
