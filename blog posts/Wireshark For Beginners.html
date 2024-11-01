@@ -171,7 +171,7 @@
                 </section>
                 <section id="Understanding the interface">
                     <h3>Understanding the interface</h3>
-                    <p>Upon launching wireshark, you are gretted with a somewhat intimidating interface. Here is a
+                    <p>Upon launching wireshark, you are greeted with a somewhat intimidating interface. Here is a
                         breakdown to get us comfirtable with:</p>
                     <section id="menu">
                         <p>
@@ -196,6 +196,13 @@
                         </ul>
                         </p>
                     </section>
+                    <figure>
+                        <picture>
+                            <img src="/assets/wireshark/wireshark-interface.jpg" alt="wireshark-interface" style="width:650px; max-width: 100%;">
+                        </picture>
+                        <figcaption>Wireshark interface when opened.</figcaption>
+                    </figure>
+
                 </section>
                 <section id="Capturing Traffic">
                     <h3>Capturing Traffic</h3>
@@ -207,11 +214,15 @@
                             adapater.
                         </li>
                         <li>
-                            <strong>Start Capture:</strong> Click the shark fin icon or navigate to
+                            <strong>Start Capture:</strong> Click the shark fin icon <picture>
+                                <img src="/assets/wireshark/wireshark-sharkfin-icon.jpg" alt="" style="">
+                            </picture> or navigate to
                             <code>Capture > Start</code> to start capturing the data.
                         </li>
                         <li>
-                            <strong>Stop Capture:</strong> Click the read square icon or go to
+                            <strong>Stop Capture:</strong> Click the red square <picture>
+                                <img src="/assets/wireshark/wireshark-stop-icon.jpg" alt="" srcset="">
+                            </picture> icon or go to
                             <code>Capture > Stop</code> when you have captured enough data.
                         </li>
                     </ul>
@@ -222,22 +233,28 @@
                         filters:</p>
                     <ul>
                         <li>
-                            <strong>Filter by ip address:</strong> <code>ip.addr == 192.168.1.1</code> o show all
+                            <strong>Filter by ip address:</strong> <code>ip.addr == 192.168.1.1</code> To show all
                             traffic to or from a specific IP address.
                         </li>
                         <li>
-                            <strong>Filter by Protocol:</strong> <code>http, tcp, udp, dns</code> to focus on specific
+                            <strong>Filter by Protocol:</strong> <code>http, tcp, udp, dns</code> To focus on specific
                             protocols.
                         </li>
                         <li>
-                            <strong>Filter by Port:</strong> <code>tcp.port == 80</code> to filter traffic based on a
+                            <strong>Filter by Port:</strong> <code>tcp.port == 80</code> To filter traffic based on a
                             specific port number.
                         </li>
                         <li>
-                            <strong>Exclude Traffic:</strong> <code>!ip.addr == 192.168.1.1</code> to exclude a specific
+                            <strong>Exclude Traffic:</strong> <code>!ip.addr == 192.168.1.1</code> To exclude a specific
                             IP address from the results.
                         </li>
                     </ul>
+                    <figure>
+                        <picture>
+                            <img src="/assets/wireshark/wireshark-filter.jpg" alt="wireshark-filter" style="width: 650px; max-width: 100%;">
+                        </picture>
+                        <figcaption>Filtering the traffic to find ip address</figcaption>
+                    </figure>
                     <p>You can also combine filters for more refined searches. For example,
                         <code>ip.addr == 192.168.1.1 && tcp.port == 443</code> show only the HTTPS traffic to or from a
                         specific IP.
