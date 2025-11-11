@@ -1,2 +1,2 @@
 # shivanandha.github.io
-a site that tells something
+A simple site where i write blogs.
