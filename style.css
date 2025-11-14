@@ -157,22 +157,28 @@ p {
   color: #111;
 }
 
-/* Center line with text */
 .line-with-text {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   width: 100%;
+  position: relative;
+  z-index: 10; /* ensure it's above background layers */
 }
 
 .line-with-text::before,
 .line-with-text::after {
   content: "";
   flex: 1;
-  border-bottom: 1px solid #000;
-  margin: 0 10px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #000 50%, transparent);
+  margin: 0 12px;
+  opacity: 0.8;
 }
+
+
+
 
 
 
@@ -230,7 +236,7 @@ p {
   background: linear-gradient(135deg, #accbee 0%, #e7f0fd 100%);
   width: 100%;
   min-height: 100vh; /* covers full landing page height */
-  display: flex;
+
   align-items: center;
   justify-content: center;
   position: relative;
