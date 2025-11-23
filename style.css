@@ -233,15 +233,30 @@ p {
 
 /* Gradient background behind the hero (Rudolf text) */
 .hero-gradient-bg {
-  background: linear-gradient(135deg, #accbee 0%, #e7f0fd 100%);
+  background: radial-gradient(circle, #accbee 60%, #e2fee5db 100%);
   width: 100%;
-  min-height: 100vh; /* covers full landing page height */
-
+  min-height: 100vh;
   align-items: center;
   justify-content: center;
   position: relative;
   text-align: center;
+  overflow: hidden; /* important for noise layer */
 }
+
+/* Noise Overlay */
+.hero-gradient-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8DwHwAFgwJ/lpW6VwAAAABJRU5ErkJggg==");
+  background-repeat: repeat;
+
+  opacity: 3.5; /* adjust 0.05 – 0.25 for more or less grain */
+  mix-blend-mode: multiply; /* gives a natural film-grain effect */
+}
+
 
 
 .hero-gradient-bg p {
