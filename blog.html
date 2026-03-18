@@ -37,7 +37,7 @@
   <title>Blog</title>
 </head>
 
-<body class="background-peach">
+<body class="background-bg">
   <!--nav-->
   <nav class="navbar navbar-expand-lg navbar-bg sticky-top shadow" aria-label="none">
     <div class="container-fluid">
@@ -96,8 +96,8 @@
     <section class="py-5 text-center container-fluid">
       <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="fw-normal">Write up's</h1>
-          <p class="lead fw-normal text-muted">
+          <h1>Write up's</h1>
+          <p class="lead fw-normal text-mute">
             These are few of my write up's. Read and find your fill.
           </p>
         </div>
@@ -105,37 +105,9 @@
     </section>
     <div>
       <div class="layout">
-        <div class="container">
-          <div class="sidebar d-none d-sm-none d-md-block">
-            <div class="card">
-              <div class="card" style="width: 18rem;">
-                <h5 class="card-title card-body text-center">Card title</h5>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">An item</li>
-                  <li class="list-group-item">A second item</li>
-                  <li class="list-group-item">A third item</li>
-                  <li class="list-group-item">A third item</li>
-                  <li class="list-group-item">A third item</li>
-                  <li class="list-group-item">A third item</li>
-                  <li class="list-group-item">A third item</li>
-                </ul>
-              </div>
-            </div>
-            <br>
-            <div class="card" style="width: 18rem;">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class=" matter container">
+
+        <main class="matter">
           <div class="card mb-3" style="max-width: 75vw; align-items: center">
             <div class="row g-0">
               <div class="col-md">
@@ -164,7 +136,7 @@
                         View
                       </a>
                     </div>
-                    <small class="text-muted">6 mins</small>
+                    <small class="text-mute">6 mins</small>
                   </div>
                 </div>
               </div>
@@ -196,7 +168,7 @@
                         View
                       </a>
                     </div>
-                    <small class="text-muted">6 mins</small>
+                    <small class="text-mute">6 mins</small>
                   </div>
                 </div>
               </div>
@@ -225,7 +197,7 @@
                         View
                       </a>
                     </div>
-                    <small class="text-muted">6 mins</small>
+                    <small class="text-mute">6 mins</small>
                   </div>
                 </div>
               </div>
@@ -251,7 +223,7 @@
                         View
                       </a>
                     </div>
-                    <small class="text-muted">6 mins</small>
+                    <small class="text-mute">6 mins</small>
                   </div>
                 </div>
               </div>
@@ -269,22 +241,70 @@
                     capture, analyze, and troubleshoot network traffic. Discover the basics and practical examples to
                     get started. </p>
 
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <a href="/blog posts/Wireshark For Beginners.html" type="button"
-                          class="btn btn-sm btn-outline-secondary">
-                          View
-                        </a>
-                      </div>
-                      <small class="text-muted">4 mins</small>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="/blog posts/Wireshark For Beginners.html" type="button"
+                        class="btn btn-sm btn-outline-secondary">
+                        View
+                      </a>
                     </div>
+                    <small class="text-mute">4 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- next card below-->
+              <div class="col">
+              <div class="card shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Changing Wazuh ip address.</h5>
+                  <p class="card-text">
+                    This blog post provides a step-by-step guide on changing the IP address of Wazuh, a popular open-source
+                    security platform.
+                  </p>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="/blog posts/Changing Wazuh ip address.html" type="button"
+                        class="btn btn-sm btn-outline-secondary">
+                        View
+                      </a>
+                    </div>
+                    <small class="text-mute">4 mins</small>
+                  </div>
                 </div>
               </div>
             </div>
             <!-- next card below-->
 
           </div>
-        </div>
+        </main>
+        <aside class="sidebar d-none d-md-block" style="display: none;">
+          <div class="card mb-3">
+            <h5 class="card-title text-center">Card title</h5>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+              <li class="list-group-item">A third item</li>
+              <li class="list-group-item">A third item</li>
+              <li class="list-group-item">A third item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </aside>
+
       </div>
     </div>
   </div>
@@ -293,7 +313,7 @@
 
   <!--footer-->
   <footer class="container-fluid d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-    <p class="col-md-4 mb-0 text-muted">&copy; 2022 Rudolf</p>
+    <p class="col-md-4 mb-0 text-mute">&copy; 2022 Rudolf</p>
 
     <a href="/"
       class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
@@ -304,19 +324,19 @@
 
     <ul class="nav col-md-4 justify-content-end">
       <li class="nav-item">
-        <a href="/index.html" class="nav-link px-2 text-muted">Home</a>
+        <a href="/index.html" class="nav-link px-2 text-mute">Home</a>
       </li>
       <li class="nav-item">
-        <a href="/about.html" class="nav-link px-2 text-muted">About</a>
+        <a href="/about.html" class="nav-link px-2 text-mute">About</a>
       </li>
       <li class="nav-item">
-        <a href="/blog.html" class="nav-link px-2 text-muted">Blog</a>
+        <a href="/blog.html" class="nav-link px-2 text-mute">Blog</a>
       </li>
       <li class="nav-item">
-        <a href="#" class="nav-link px-2 text-muted">FAQs</a>
+        <a href="#" class="nav-link px-2 text-mute">FAQs</a>
       </li>
       <li class="nav-item">
-        <a href="#" class="nav-link px-2 text-muted">Social's</a>
+        <a href="#" class="nav-link px-2 text-mute">Social's</a>
       </li>
     </ul>
   </footer>

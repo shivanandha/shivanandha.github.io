@@ -46,7 +46,7 @@ Tryhackme, tryhackme, HackTheBox, hackthebox, writeups, cybersecurity, shivanand
     <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
         data-id="rudolfe" data-description="Support me on Buy me a coffee!" data-message="" data-color="#D1C4E9"
         data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-    <title>Installing Wazuh OVA in VM</title>
+    <title>Changing Wazuh IP Address</title>
 </head>
 
 <body class="background-bg">
@@ -110,7 +110,7 @@ Tryhackme, tryhackme, HackTheBox, hackthebox, writeups, cybersecurity, shivanand
     <div class="content py-5 text-center">
         <div class="row py-lg">
             <div class="col-lg-6 col-md-8 mx-auto">
-                <h1 class="fw-normal">Installing Wazuh OVA in VM</h1>
+                <h1 class="fw-normal">Changing Wazuh ip address</h1>
                 <p class="lead fw-normal ">
                     --
                 </p>
@@ -123,117 +123,61 @@ Tryhackme, tryhackme, HackTheBox, hackthebox, writeups, cybersecurity, shivanand
         <main class="content">
             <article>
                 <section id="Introduction">
-                    <h3>Introduction</h3>
-                    <p>Wazuh is an open-source security monitoring solution that provides comprehensive security
-                        analytics and monitoring for endpoints and cloud workloads. Using a pre-configured Open Virtual
-                        Appliance (OVA) file simplifies the deployment process, allowing you to get up and running
-                        quickly. This guide will walk you through the process of installing the Wazuh OVA on a virtual
-                        machine (VM) using VMware Workstation and Oracle VirtualBox.</p>
+                    <h3 class="underline">Introduction</h3>
+                    <p>In this blog post we will change the IP address of a Wazuh machine. This will keep the IP address
+                        static even after a reboot. So now we will walk through the steps to configure a static IP
+                        address for the Wazuh machine.</p>
                 </section>
                 <section id="Prerequisites">
-                    <h3>Prerequisites</h3>
+                    <h3 class="underline">Prerequisites</h3>
                     <p>
-                    <ol>
-                        <li><strong>
-                                Virtualization Software:
-                            </strong> Ensure you have virtualization software installed on your system. </li>
-                        <li><strong>OVA File: </strong> Download the latest Wazuh OVA file from the Wazuh official
-                            <a href="https://wazuh.com/">website.</a>
-                        </li>
-                        <li><strong>System Resources: </strong>Verify that your system meets the resource
-                            requirements for running Wazuh, including sufficient CPU, RAM, and disk space.</li>
-                    </ol>
+                        Before we begin, make sure you have the following prerequisites in place:
+                    <ul>
+                        <li>A Wazuh machine running on your network.</li>
+                        <li>Access to the Wazuh machine with administrative/root privileges.</li>
+                        <li>Basic knowledge of Linux command line and network configuration.</li>
+                    </ul>
                     </p>
                 </section>
                 <section id="Steps">
-                    <h3>Steps</h3>
+                    <h3 class="underline">Steps</h3>
+                    <p> Make sure the wazuh machine is turned on and log on to the machine.</p>
                     <section id="Step-1">
+                        <h5>Step 1: Check the current version of the machine.</h5>
                         <p>
-                        <h5>Step 1: Download and Verify the OVA File</h5>
-                        <ol>
-                            <li>Go to the Wazuh <a
-                                    href="https://documentation.wazuh.com/current/deployment-options/virtual-machine/virtual-machine.html#packages-list">Documentation
-                                    Page</a> and download the OVA file.</li>
-                            <li>Verify the integrity of the downloaded file using the provided checksum to ensure it
-                                hasn’t been corrupted during the download.</li>
-                        </ol>
-                        </p>
                         <div class="code-snippet">
-                            <table style="width: 100%;">
+                            <table style="width: 100%;text-align: center;">
                                 <tr>
-                                    <th>Powershell</th>
+                                    <th>Bash</th>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <pre><code>Get-FileHash -Path &lt;file_path&gt; -Algorithm SHA256</code></pre>
+                                        <pre><code>cat /etc/os-release</code></pre>
                                     </td>
                                 </tr>
                             </table>
                         </div>
-                    </section>
-                    <section id="Step-2">
-                        <h5>Step 2: Install Wazuh OVA in VMware Workstation</h5>
                         <p>
-                        <ol>
-                            <li>
-                                Open VMware Workstation: Launch VMware Workstation on your computer.
-                            </li>
-                            <li>
-                                Import OVA File:
-                                <ul>
-                                    <li>
-                                        Click on File &gt; Open....
-                                    </li>
-                                    <li>Navigate to the downloaded Wazuh OVA file and select it.</li>
-                                    <li>
-                                        Click Open to start the import process.
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                Configure Virtual Machine
-                                <ul>
-                                    <li>Assign a name to your VM.</li>
-                                    <li>Choose the location where you want to store the VM files.</li>
-                                    <li>Adjust the resources (CPU, RAM, disk space) based on your system's capabilities
-                                        and Wazuh's requirements.</li>
-                                </ul>
-                            </li>
-                            <li>
-                                Finish and Power On:
-                                <ul>
-                                    <li>Click Finish to complete the import.</li>
-                                    <li>Select the newly created VM and click Power on this virtual machine.</li>
-                                </ul>
-                            </li>
-                            <li>
-                                Network Configuration:
-                                <ul>
-                                    <li>Configure the network settings as required. Bridged networking allows the VM to
-                                        connect to the network using the host machine’s network interface.</li>
-                                </ul>
-                            </li>
-                            <li>Access Wazuh:
-                                <ul>
-                                    <li>
-                                        Once the VM is running, you can access the Wazuh web interface using the VM's IP
-                                        address. Open a web browser and enter https://&lt;VM_IP_ADDRESS&gt;.
-                                    </li>
-                                </ul>
-                            </li>
-                        </ol>
+                            This command will display the operating system information.
+                            <br>
+                            look for the line that starts with "Pretty_Name" to see the current version of the OS.
+                            <code> Pretty_Name="Amazon Linux 2023.x.xxxxxxxx" </code>
+                            <br>
+                            Once you have the current version information, and matches the expected version, you can
+                            proceed to the next step.
+                        </p>
+
                         </p>
                     </section>
                 </section>
-                <section id="Post-Installation">
-                    <h3>Post-Installation Steps</h3>
+                <section id="configuring the IP address">
+                    <h5>Step 2: Configuring the IP address</h5>
                     <p>
                     <ol>
                         <li>
-                            Login Credentials:
+                            Login:
                             <ul>
-                                <li>The default credentials are usually provided in the Wazuh documentation or during
-                                    the first login setup. Make sure to change the default password immediately.</li>
+                                <li>Login to the wazuh machine.</li>
                             </ul>
                         </li>
                         <li>
@@ -248,22 +192,51 @@ Tryhackme, tryhackme, HackTheBox, hackthebox, writeups, cybersecurity, shivanand
                             Configuration:
                             <ul>
                                 <li>
-                                    Customize the Wazuh settings based on your specific monitoring requirements. Refer
-                                    to the Wazuh documentation for detailed guidance on configuration and management.
+                                    Navigate to the following path to edit the network configuration file:
+                                    <pre><code>/etc/systemd/network</code></pre>
                                 </li>
+                                <li>
+                                    Create a new file "05-static-eth0.network" using the command:
+                                    <pre><code>sudo vim /etc/systemd/network/05-static-eth0</code></pre>
+                                    Here im using vim editor you can use any editor of your choice.
+                                </li>
+                                <li>
+                                    Add the following configuration to set a static IP address:
+                                    <pre><code>[Match]
+Name=eth0
+
+[Network]
+Address=192.168.0.200/24
+Gateway=192.168.0.1
+DNS=8.8.8.8
+DNS=1.1.1.1
+</code></pre>
                             </ul>
+                        </li>
+                        <li>
+                            save and exit the file. press "ESC" and type ":wq" to save and exit the file.
+                        </li>
+                        <li>
+                            Restart the machine to apply the changes using the command:
+                            <pre><code>sudo reboot</code></pre>
+                        </li>
+                        <li>
+                            This will restart the Wazuh machine, and upon reboot, it will have the new static IP address
+                            configured.
+                        </li>
+                        <li>SSH into the machine using the new IP address to verify that the changes were applied
+                            successfully.</li>
                         </li>
                     </ol>
                     </p>
                 </section>
                 <section id="Conclusion">
-                    <h3>Conclusion</h3>
+                    <h3 class="underline">Conclusion</h3>
                     <p>
-                        Installing Wazuh using the OVA file on a virtual machine simplifies the deployment process,
-                        allowing you to quickly set up a powerful security monitoring tool. Whether you are using VMware
-                        Workstation or Oracle VirtualBox, the steps outlined in this guide should help you get started
-                        with Wazuh. Explore the Wazuh dashboard, configure your alerts, and start monitoring your
-                        environment effectively!
+                        In this blog post, we have successfully changed the IP address of a Wazuh machine to a static IP
+                        address. By following the steps outlined above, you can ensure that your Wazuh machine retains
+                        its IP address even after a reboot, which is essential for consistent network communication and
+                        management.
                         <br><br>
                         Feel free to leave any questions or feedback in the comments below.
                     </p>
@@ -278,11 +251,10 @@ Tryhackme, tryhackme, HackTheBox, hackthebox, writeups, cybersecurity, shivanand
                     <li><a href="#Prerequisites">Prerequisites</a></li>
                     <li><a href="#Steps">Steps</a>
                         <ul>
-                            <li><a href="#Step-1">Step-1 Downloading</a></li>
-                            <li><a href="#Step-2">Step-2 Installing</a></li>
+                            <li><a href="#Step-1">Step-1 Check wazuh version</a></li>
+                            <li><a href="#Step-2">Step-2 Configure the IP address</a></li>
                         </ul>
                     </li>
-                    <li><a href="#Post-Installation">Post-Installation Steps</a></li>
                     <li><a href="#Conclusion">Conclusion</a></li>
                 </ul>
             </nav>
@@ -315,7 +287,6 @@ Tryhackme, tryhackme, HackTheBox, hackthebox, writeups, cybersecurity, shivanand
         <noscript>Please enable JavaScript to view the
             <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
-
 
 
     <!--footer-->
