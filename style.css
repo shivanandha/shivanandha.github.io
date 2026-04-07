@@ -408,3 +408,7 @@ figcaption {
   border: none;
   color: whitesmoke;
 }
+
+.bg-sus{
+  background-color: #212121;
+}
